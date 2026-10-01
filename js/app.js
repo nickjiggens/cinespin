@@ -13,8 +13,8 @@ class MoviePickerApp {
     this.history = this.loadHistory();
 
     // App state
-    this.currentCategoryId = 'eras';
-    this.currentListId = 'era-90s'; // default to 90s peak cinema
+    this.currentCategoryId = 'our-list';
+    this.currentListId = 'nick-gf-movies'; // default to Nick & GF Google Doc list
     this.activeMovies = [];
     this.disabledMovieIds = new Set();
     this.maxRuntimeFilter = 'all'; // 'all', '100', '120'

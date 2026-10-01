@@ -3,6 +3,12 @@
 
 export const MOVIE_CATEGORIES = [
   {
+    id: 'our-list',
+    name: 'Our Watchlist ❤️',
+    icon: '❤️',
+    description: 'Synced directly from our Google Doc'
+  },
+  {
     id: 'eras',
     name: 'Eras & Decades',
     icon: '⏳',
@@ -35,6 +41,59 @@ export const MOVIE_CATEGORIES = [
 ];
 
 export const PRESET_LISTS = [
+  // ==========================================
+  // --- NICK & GF'S GOOGLE DOC WATCHLIST ---
+  // ==========================================
+  {
+    id: 'nick-gf-movies',
+    categoryId: 'our-list',
+    title: 'Movies We Should Watch',
+    icon: '🍿',
+    tagline: 'Synced from our shared Google Doc',
+    movies: [
+      { id: 'ng-1', title: 'A Clockwork Orange', year: 1971, runtime: '136 min', runtimeMinutes: 136, genre: 'Crime / Sci-Fi', director: 'Stanley Kubrick', tagline: 'A dazzling, provocative classic of psychology and conditioning.', rating: '8.3' },
+      { id: 'ng-2', title: 'Safe', year: 1995, runtime: '119 min', runtimeMinutes: 119, genre: 'Drama / Mystery', director: 'Todd Haynes', tagline: 'Julianne Moore in an unsettling masterpiece about modern alienation.', rating: '7.2' },
+      { id: 'ng-3', title: 'X', year: 2022, runtime: '105 min', runtimeMinutes: 105, genre: 'Horror / Mystery / Thriller', director: 'Ti West', tagline: 'One goddamn messed up horror film in 1979 rural Texas.', rating: '6.6' },
+      { id: 'ng-4', title: 'Pearl', year: 2022, runtime: '103 min', runtimeMinutes: 103, genre: 'Drama / Horror', director: 'Ti West', tagline: 'Mia Goth\'s breathtaking performance: I\'M A STAR!', rating: '7.0' },
+      { id: 'ng-5', title: 'MaXXXine', year: 2024, runtime: '103 min', runtimeMinutes: 103, genre: 'Crime / Horror', director: 'Ti West', tagline: '1980s Hollywood neon slasher glory. Maxine won\'t accept a life she doesn\'t deserve.', rating: '6.5' },
+      { id: 'ng-6', title: 'Everything Everywhere All at Once', year: 2022, runtime: '139 min', runtimeMinutes: 139, genre: 'Action / Adventure / Comedy', director: 'The Daniels', tagline: 'In another life, I would have really liked just doing laundry and taxes with you.', rating: '7.8' },
+      { id: 'ng-7', title: 'Good Time', year: 2017, runtime: '101 min', runtimeMinutes: 101, genre: 'Crime / Drama / Thriller', director: 'Safdie Brothers', tagline: 'Robert Pattinson through a neon, synth-heavy Queens night of frantic choices.', rating: '7.3' },
+      { id: 'ng-8', title: 'Uncut Gems', year: 2019, runtime: '135 min', runtimeMinutes: 135, genre: 'Crime / Drama / Thriller', director: 'Safdie Brothers', tagline: 'Adam Sandler in a legendary two-hour high-wire anxiety rush.', rating: '7.4' },
+      { id: 'ng-9', title: 'Daddy Longlegs', year: 2009, runtime: '100 min', runtimeMinutes: 100, genre: 'Comedy / Drama', director: 'Safdie Brothers', tagline: 'The Safdies\' intimate, chaotic breakout tribute to flawed fatherhood.', rating: '6.8' },
+      { id: 'ng-10', title: 'Pleasure', year: 2021, runtime: '109 min', runtimeMinutes: 109, genre: 'Drama', director: 'Ninja Thyberg', tagline: 'A raw, uncompromising, critical look inside the Los Angeles adult industry.', rating: '6.4' },
+      { id: 'ng-11', title: 'Isle of Dogs', year: 2018, runtime: '101 min', runtimeMinutes: 101, genre: 'Animation / Adventure / Comedy', director: 'Wes Anderson', tagline: 'Whatever happened to man\'s best friend? Trash Island adventure.', rating: '7.8' },
+      { id: 'ng-12', title: 'The Phoenician Scheme', year: 2025, runtime: '105 min', runtimeMinutes: 105, genre: 'Comedy / Drama', director: 'Wes Anderson', tagline: 'Wes Anderson\'s highly anticipated upcoming all-star espionage caper.', rating: 'Upcoming' },
+      { id: 'ng-13', title: 'Asteroid City', year: 2023, runtime: '105 min', runtimeMinutes: 105, genre: 'Comedy / Drama / Romance', director: 'Wes Anderson', tagline: 'You can\'t wake up if you don\'t fall asleep.', rating: '6.5' },
+      { id: 'ng-14', title: 'The French Dispatch', year: 2021, runtime: '107 min', runtimeMinutes: 107, genre: 'Comedy / Drama / Romance', director: 'Wes Anderson', tagline: 'A love letter to journalists and visual symmetry in Ennui-sur-Blasé.', rating: '7.1' },
+      { id: 'ng-15', title: 'Elephant', year: 2003, runtime: '81 min', runtimeMinutes: 81, genre: 'Crime / Drama', director: 'Gus Van Sant', tagline: 'Palme d\'Or winner: a haunting, floating study of a high school afternoon.', rating: '7.1' },
+      { id: 'ng-16', title: 'Paranoid Park', year: 2007, runtime: '85 min', runtimeMinutes: 85, genre: 'Crime / Drama / Mystery', director: 'Gus Van Sant', tagline: 'Skater culture, guilt, and Elliott Smith\'s dreamy acoustic score.', rating: '6.7' },
+      { id: 'ng-17', title: 'My Own Private Idaho', year: 1991, runtime: '104 min', runtimeMinutes: 104, genre: 'Drama', director: 'Gus Van Sant', tagline: 'River Phoenix and Keanu Reeves in a poetic Pacific Northwest journey.', rating: '7.0' },
+      { id: 'ng-18', title: 'Drugstore Cowboy', year: 1989, runtime: '102 min', runtimeMinutes: 102, genre: 'Crime / Drama', director: 'Gus Van Sant', tagline: 'Matt Dillon in a seminal, darkly humorous road movie.', rating: '7.3' },
+      { id: 'ng-19', title: 'No Country for Old Men', year: 2007, runtime: '122 min', runtimeMinutes: 122, genre: 'Crime / Drama / Thriller', director: 'The Coen Brothers', tagline: 'What\'s the most you ever lost on a coin toss?', rating: '8.2' },
+      { id: 'ng-20', title: 'Raising Arizona', year: 1987, runtime: '94 min', runtimeMinutes: 94, genre: 'Comedy / Crime', director: 'The Coen Brothers', tagline: 'Nicolas Cage and Holly Hunter in unhinged desert slapstick gold.', rating: '7.3' },
+      { id: 'ng-21', title: 'Lean on Pete', year: 2017, runtime: '121 min', runtimeMinutes: 121, genre: 'Adventure / Drama', director: 'Andrew Haigh', tagline: 'A boy and a racehorse on the Oregon trail (my grandpa is an extra in this!)', rating: '7.2' },
+      { id: 'ng-22', title: 'Pig', year: 2021, runtime: '92 min', runtimeMinutes: 92, genre: 'Drama / Mystery', director: 'Michael Sarnoski', tagline: 'Nicolas Cage searching for his stolen truffle pig in Portland. Profoundly touching.', rating: '6.9' },
+      { id: 'ng-23', title: 'Honey Boy', year: 2019, runtime: '94 min', runtimeMinutes: 94, genre: 'Drama', director: 'Alma Har\'el', tagline: 'A vulnerable, autobiographical story of childhood stardom and healing.', rating: '7.3' },
+      { id: 'ng-24', title: 'Eraserhead', year: 1977, runtime: '89 min', runtimeMinutes: 89, genre: 'Fantasy / Horror', director: 'David Lynch', tagline: 'In Heaven, everything is fine. David Lynch\'s surreal dream world.', rating: '7.3' },
+      { id: 'ng-25', title: 'Parasite', year: 2019, runtime: '132 min', runtimeMinutes: 132, genre: 'Drama / Thriller', director: 'Bong Joon-ho', tagline: 'Act like you own the place.', rating: '8.5' },
+      { id: 'ng-26', title: 'The Skeleton Twins', year: 2014, runtime: '93 min', runtimeMinutes: 93, genre: 'Comedy / Drama', director: 'Craig Johnson', tagline: 'Bill Hader and Kristen Wiig lip-syncing Nothing\'s Gonna Stop Us Now.', rating: '6.8' },
+      { id: 'ng-27', title: 'Gigli', year: 2003, runtime: '121 min', runtimeMinutes: 121, genre: 'Comedy / Crime / Romance', director: 'Martin Brest', tagline: 'It\'s turkey time. Gobble gobble! The infamous, hilarious cult classic.', rating: '2.6' },
+      { id: 'ng-28', title: 'Guns Akimbo', year: 2019, runtime: '98 min', runtimeMinutes: 98, genre: 'Action / Comedy / Sci-Fi', director: 'Jason Lei Howden', tagline: 'Daniel Radcliffe with pistols bolted to his hands in a bathrobe.', rating: '6.3' },
+      { id: 'ng-29', title: 'Torque', year: 2004, runtime: '84 min', runtimeMinutes: 84, genre: 'Action / Crime', director: 'Joseph Kahn', tagline: 'The real deal at 200 mph. Hilarious, supersonic early-2000s motorcycle mayhem.', rating: '4.1' }
+    ]
+  },
+  {
+    id: 'nick-gf-tv',
+    categoryId: 'our-list',
+    title: 'TV Shows to Binge',
+    icon: '📺',
+    tagline: 'Television series from our Google Doc',
+    movies: [
+      { id: 'tv-1', title: 'Insomniac with Dave Attell', year: 2001, runtime: '30 min/ep', runtimeMinutes: 30, genre: 'Comedy / Documentary', director: 'Dave Attell', tagline: 'Exploring the weird, wild late-night life of cities after 2 AM.', rating: '8.6' },
+      { id: 'tv-2', title: 'Westworld', year: 2016, runtime: '60 min/ep', runtimeMinutes: 60, genre: 'Sci-Fi / Drama / Mystery', director: 'Jonathan Nolan, Lisa Joy', tagline: 'These violent delights have violent ends. The park awaits.', rating: '8.5' },
+      { id: 'tv-3', title: 'Twin Peaks', year: 1990, runtime: '47 min/ep', runtimeMinutes: 47, genre: 'Crime / Drama / Mystery', director: 'David Lynch, Mark Frost', tagline: 'Who killed Laura Palmer? Damn fine coffee and cherry pie.', rating: '8.8' }
+    ]
+  },
   // ==========================================
   // --- ERAS & DECADES ---
   // ==========================================
