@@ -12,11 +12,12 @@
   - High-DPI canvas rendering for razor-sharp visuals on any screen.
 - **Alternative Film Strip Reel Mode**:
   - Switch between the classic Wheel and a high-speed Cinema Slot Reel with one click.
-- **Sourced & Curated Movie Lists Across 4 Major Categories (39 Lists, 628+ Movies)**:
+- **Sourced & Curated Movie Lists Across 5 Major Categories (74 Lists, 1,000 Movies)**:
+  - **Our Watchlist ❤️ (2 Lists)**: Personal Google Doc watchlist with custom notes & TV shows to binge.
   - **Eras & Decades (7 Lists)**: 1950s & 60s Golden Hollywood, 1970s Golden Age, 1980s Retro Hits, 1990s Peak Cinema, 2000s Modern Essentials, 2010s Modern Masterpieces, 2020s Contemporary Hits.
-  - **Genres (9 Lists)**: Date Night Rom-Coms & Romance, Mind-Benders & Psychological Thrillers, Horror & Spine-Chillers, Mind-Blowing Sci-Fi, High-Adrenaline Action & Stunts, Laugh-Out-Loud Comedies, Whodunnits & Detective Mysteries, Cozy Animation & Wonders, Emotional Dramas & Tearjerkers.
-  - **Vibes & Themes (9 Lists)**: "Can't Agree on Anything" (100% Crowd Pleasers), "Rainy Day Cozy & Comfort", "Under 100 Minutes" (Quick Watches), "Heists, Hustles & Con Artists", "A24 & Cool Indie Cinema", "Mind-Melt Plot Twists Only", "Instant Antidepressants & Uplifting Hits", "Based on Incredible True Events", "Late Night Neon & Synth Noir".
-  - **Iconic Directors (14 Lists)**: Christopher Nolan, Quentin Tarantino, Denis Villeneuve, Martin Scorsese, Wes Anderson, Hayao Miyazaki & Studio Ghibli, David Fincher, The Coen Brothers, Edgar Wright, Greta Gerwig, Steven Spielberg, Stanley Kubrick, Bong Joon-ho & Korean Titans, Guillermo del Toro.
+  - **Genres (12 Lists)**: Date Night Rom-Coms, Mind-Benders & Psychological Thrillers, Horror, Mind-Blowing Sci-Fi, Action & Stunts, Laugh-Out-Loud Comedies, Whodunnits & Mysteries, Cozy Animation, Emotional Dramas & Tearjerkers, Westerns & Outlaws, Anime Legends, Musicals & Broadway.
+  - **Vibes & Themes (25 Lists)**: Crowd-Pleasers, Rainy Day Cozy, Under 100 Minutes, Heists & Cons, A24 & Indie Cinema, Mind-Melt Twists, Feel-Good Antidepressants, True Events, Neon & Synth Noir, Cult Classics, Oscar Best Picture Elite, Food & Culinary Delights, Road Trips, Spooky Season, Fantasy & Mythic Quests, Holiday Spirit & Christmas, Cyberpunk Dystopias, Time Loops & Paradoxes, Sports Underdogs, Courtroom Showdowns, Wild Survival, Cozy Autumn, 2000s Raunchy Comedies, Epic War, Prison Escapes.
+  - **Iconic Directors (28 Lists)**: Nolan, Tarantino, Villeneuve, Scorsese, Wes Anderson, Miyazaki, Fincher, Coen Brothers, Edgar Wright, Gerwig, Spielberg, Kubrick, Bong Joon-ho, del Toro, Hitchcock, Ridley Scott, PTA, David Lynch, Gus Van Sant, Safdie Brothers, Jordan Peele, Spike Lee, Yorgos Lanthimos, Tim Burton, James Cameron, Wong Kar-wai, Damien Chazelle, The Wachowskis.
   - **Custom Watchlists**: Create and save your own couple watchlists directly into `localStorage`.
 - **Lineup Filters & Controls**:
   - Runtime filter pills: `All Times`, `< 100m`, `< 120m`.

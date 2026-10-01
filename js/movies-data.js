@@ -577,6 +577,70 @@ export const PRESET_LISTS = [
   },
 
   // ==========================================
+    {
+    id: 'genre-western',
+    categoryId: 'genres',
+    title: 'Westerns, Outlaws & Gunslingers',
+    icon: '🤠',
+    tagline: 'Standoffs at high noon, frontier grit, bounty hunters, and desolate desert vistas',
+    movies: [
+      { id: 'west-1', title: 'The Good, the Bad and the Ugly', year: 1966, runtime: '178 min', runtimeMinutes: 178, genre: 'Western', director: 'Sergio Leone', tagline: 'Ennio Morricone\'s whistling score and the three-way cemetery shootout.', rating: '8.8' },
+      { id: 'west-2', title: 'Unforgiven', year: 1992, runtime: '130 min', runtimeMinutes: 130, genre: 'Western', director: 'Clint Eastwood', tagline: 'It\'s a hell of a thing, killing a man. Take away all he\'s got and all he\'s ever gonna have.', rating: '8.2' },
+      { id: 'west-3', title: 'Django Unchained', year: 2012, runtime: '165 min', runtimeMinutes: 165, genre: 'Drama / Western', director: 'Quentin Tarantino', tagline: 'The \'D\' is silent. Jamie Foxx and Christoph Waltz taking down Candyland.', rating: '8.5' },
+      { id: 'west-4', title: 'No Country for Old Men', year: 2007, runtime: '122 min', runtimeMinutes: 122, genre: 'Crime / Drama / Thriller', director: 'Ethan & Joel Coen', tagline: 'Anton Chigurh flipping a coin at the West Texas gas station.', rating: '8.2' },
+      { id: 'west-5', title: 'Once Upon a Time in the West', year: 1968, runtime: '166 min', runtimeMinutes: 166, genre: 'Western', director: 'Sergio Leone', tagline: 'Harmonica notes echo across the Monument Valley railroad.', rating: '8.5' },
+      { id: 'west-6', title: 'Butch Cassidy and the Sundance Kid', year: 1969, runtime: '110 min', runtimeMinutes: 110, genre: 'Biography / Crime / Western', director: 'George Roy Hill', tagline: 'Paul Newman and Robert Redford jumping off the cliff into the river.', rating: '8.0' },
+      { id: 'west-7', title: 'Tombstone', year: 1993, runtime: '130 min', runtimeMinutes: 130, genre: 'Action / Biography / Drama', director: 'George P. Cosmatos', tagline: 'Val Kilmer as Doc Holliday: I\'m your huckleberry.', rating: '7.8' },
+      { id: 'west-8', title: 'The Hateful Eight', year: 2015, runtime: '168 min', runtimeMinutes: 168, genre: 'Crime / Drama / Mystery', director: 'Quentin Tarantino', tagline: 'Eight suspicious strangers trapped by a blizzard in Minnie\'s Haberdashery.', rating: '7.8' },
+      { id: 'west-9', title: 'True Grit', year: 2010, runtime: '110 min', runtimeMinutes: 110, genre: 'Drama / Western', director: 'Ethan & Joel Coen', tagline: 'Jeff Bridges as Rooster Cogburn galloping with reins in his teeth.', rating: '7.6' },
+      { id: 'west-10', title: '3:10 to Yuma', year: 2007, runtime: '122 min', runtimeMinutes: 122, genre: 'Action / Crime / Drama', director: 'James Mangold', tagline: 'Christian Bale escorting outlaw Russell Crowe to the afternoon train.', rating: '7.7' },
+      { id: 'west-11', title: 'Hell or High Water', year: 2016, runtime: '102 min', runtimeMinutes: 102, genre: 'Action / Crime / Drama', director: 'David Mackenzie', tagline: 'Chris Pine and Ben Foster robbing West Texas banks to save the family ranch.', rating: '7.6' },
+      { id: 'west-12', title: 'The Magnificent Seven', year: 1960, runtime: '128 min', runtimeMinutes: 128, genre: 'Action / Adventure / Western', director: 'John Sturges', tagline: 'Yul Brynner and Steve McQueen riding to defend a Mexican farming village.', rating: '7.7' }
+    ]
+  },
+  {
+    id: 'genre-anime',
+    categoryId: 'genres',
+    title: 'Anime Legends & Masterpieces',
+    icon: '🌸',
+    tagline: 'Jaw-dropping hand-drawn animation, emotional depth, and visionary Japanese storytelling',
+    movies: [
+      { id: 'ani-leg-1', title: 'Spirited Away', year: 2001, runtime: '125 min', runtimeMinutes: 125, genre: 'Animation / Adventure / Family', director: 'Hayao Miyazaki', tagline: 'Chihiro works at the bathhouse of the spirits to rescue her parents.', rating: '8.6' },
+      { id: 'ani-leg-2', title: 'Your Name', year: 2016, runtime: '107 min', runtimeMinutes: 107, genre: 'Animation / Drama / Fantasy', director: 'Makoto Shinkai', tagline: 'Two strangers wake up swapping bodies across Tokyo and rural Itomori.', rating: '8.4' },
+      { id: 'ani-leg-3', title: 'Princess Mononoke', year: 1997, runtime: '134 min', runtimeMinutes: 134, genre: 'Animation / Action / Adventure', director: 'Hayao Miyazaki', tagline: 'To see with eyes unclouded by hate: iron town against the ancient forest gods.', rating: '8.3' },
+      { id: 'ani-leg-4', title: 'Akira', year: 1988, runtime: '124 min', runtimeMinutes: 124, genre: 'Animation / Action / Sci-Fi', director: 'Katsuhiro Otomo', tagline: 'Neo-Tokyo is about to E.X.P.L.O.D.E. The red motorcycle skid that defined cyberpunk.', rating: '8.0' },
+      { id: 'ani-leg-5', title: 'Perfect Blue', year: 1997, runtime: '81 min', runtimeMinutes: 81, genre: 'Animation / Crime / Drama', director: 'Satoshi Kon', tagline: 'A pop idol turned actress loses her grip on reality as a stalker closes in.', rating: '8.0' },
+      { id: 'ani-leg-6', title: 'Ghost in the Shell', year: 1995, runtime: '83 min', runtimeMinutes: 83, genre: 'Animation / Action / Crime', director: 'Mamoru Oshii', tagline: 'Major Motoko Kusanagi questioning the soul inside her cyborg chassis.', rating: '7.9' },
+      { id: 'ani-leg-7', title: 'A Silent Voice', year: 2016, runtime: '130 min', runtimeMinutes: 130, genre: 'Animation / Drama', director: 'Naoko Yamada', tagline: 'A former bully seeks redemption and true connection with a deaf girl he wronged.', rating: '8.1' },
+      { id: 'ani-leg-8', title: 'Suzume', year: 2022, runtime: '122 min', runtimeMinutes: 122, genre: 'Animation / Action / Adventure', director: 'Makoto Shinkai', tagline: 'Closing mystical doors across disaster-stricken Japan to prevent catastrophe.', rating: '7.6' },
+      { id: 'ani-leg-9', title: 'Paprika', year: 2006, runtime: '90 min', runtimeMinutes: 90, genre: 'Animation / Drama / Fantasy', director: 'Satoshi Kon', tagline: 'Therapists enter dreams through the DC Mini before reality begins to fracture.', rating: '7.7' },
+      { id: 'ani-leg-10', title: 'The Boy and the Heron', year: 2023, runtime: '124 min', runtimeMinutes: 124, genre: 'Animation / Adventure / Drama', director: 'Hayao Miyazaki', tagline: 'Miyazaki\'s Oscar-winning semi-autobiographical portal into life and death.', rating: '7.5' },
+      { id: 'ani-leg-11', title: 'The Girl Who Leapt Through Time', year: 2006, runtime: '98 min', runtimeMinutes: 98, genre: 'Animation / Adventure / Comedy', director: 'Mamoru Hosoda', tagline: 'Time waits for no one: using leap powers for pudding and karaoke runs.', rating: '7.7' },
+      { id: 'ani-leg-12', title: 'Grave of the Fireflies', year: 1988, runtime: '89 min', runtimeMinutes: 89, genre: 'Animation / Drama / War', director: 'Isao Takahata', tagline: 'Seita and Setsuko in wartime Kobe. Devastatingly poignant and unforgettable.', rating: '8.5' }
+    ]
+  },
+  {
+    id: 'genre-musicals',
+    categoryId: 'genres',
+    title: 'Musicals & Broadway on Screen',
+    icon: '🎭',
+    tagline: 'Irresistible rhythm, dazzling choreography, heartbreak, and showstopping musical numbers',
+    movies: [
+      { id: 'mus-1', title: 'La La Land', year: 2016, runtime: '128 min', runtimeMinutes: 128, genre: 'Comedy / Drama / Music', director: 'Damien Chazelle', tagline: 'Here\'s to the fools who dream. Emma Stone and Ryan Gosling under purple LA skies.', rating: '8.0' },
+      { id: 'mus-2', title: 'Singin\' in the Rain', year: 1952, runtime: '103 min', runtimeMinutes: 103, genre: 'Comedy / Musical / Romance', director: 'Stanley Donen & Gene Kelly', tagline: 'Gene Kelly splashing through puddle-soaked streetlamps in pure joy.', rating: '8.3' },
+      { id: 'mus-3', title: 'Chicago', year: 2002, runtime: '113 min', runtimeMinutes: 113, genre: 'Comedy / Crime / Musical', director: 'Rob Marshall', tagline: 'All that jazz: Roxie Hart and Velma Kelly in Cook County Jail.', rating: '7.2' },
+      { id: 'mus-4', title: 'The Sound of Music', year: 1965, runtime: '172 min', runtimeMinutes: 172, genre: 'Biography / Drama / Family', director: 'Robert Wise', tagline: 'The hills are alive with Julie Andrews and the von Trapp family.', rating: '8.1' },
+      { id: 'mus-5', title: 'West Side Story', year: 2021, runtime: '156 min', runtimeMinutes: 156, genre: 'Crime / Drama / Musical', director: 'Steven Spielberg', tagline: 'Spielberg\'s electrifying, visually gorgeous revival of the Leonard Bernstein classic.', rating: '7.2' },
+      { id: 'mus-6', title: 'Moulin Rouge!', year: 2001, runtime: '127 min', runtimeMinutes: 127, genre: 'Drama / Musical / Romance', director: 'Baz Luhrmann', tagline: 'The greatest thing you\'ll ever learn is just to love and be loved in return.', rating: '7.6' },
+      { id: 'mus-7', title: 'The Rocky Horror Picture Show', year: 1975, runtime: '100 min', runtimeMinutes: 100, genre: 'Comedy / Musical / Sci-Fi', director: 'Jim Sharman', tagline: 'Let\'s do the Time Warp again! Tim Curry in fishnets and glam-rock glory.', rating: '7.4' },
+      { id: 'mus-8', title: 'Tick, Tick... Boom!', year: 2021, runtime: '115 min', runtimeMinutes: 115, genre: 'Biography / Comedy / Drama', director: 'Lin-Manuel Miranda', tagline: 'Andrew Garfield as Rent composer Jonathan Larson racing against the clock.', rating: '7.5' },
+      { id: 'mus-9', title: 'Cabaret', year: 1972, runtime: '124 min', runtimeMinutes: 124, genre: 'Drama / Music / Musical', director: 'Bob Fosse', tagline: 'Liza Minnelli as Sally Bowles performing in the decadent Kit Kat Klub.', rating: '7.8' },
+      { id: 'mus-10', title: 'All That Jazz', year: 1979, runtime: '123 min', runtimeMinutes: 123, genre: 'Comedy / Drama / Music', director: 'Bob Fosse', tagline: 'Roy Scheider in Fosse\'s hallucinatory self-portrait of dance and mortality.', rating: '7.8' },
+      { id: 'mus-11', title: 'Rocketman', year: 2019, runtime: '121 min', runtimeMinutes: 121, genre: 'Biography / Drama / Music', director: 'Dexter Fletcher', tagline: 'Taron Egerton singing Elton John classics through triumph and addiction.', rating: '7.3' },
+      { id: 'mus-12', title: 'Sweeney Todd: The Demon Barber of Fleet Street', year: 2007, runtime: '116 min', runtimeMinutes: 116, genre: 'Drama / Musical / Thriller', director: 'Tim Burton', tagline: 'Sondheim\'s blood-soaked dark operetta starring Johnny Depp and Helena Bonham Carter.', rating: '7.3' }
+    ]
+  },
+
   // --- VIBES & THEMES ---
   // ==========================================
   {
@@ -840,8 +904,353 @@ export const PRESET_LISTS = [
       { id: 'nn-20', title: 'Heat', year: 1995, runtime: '170 min', runtimeMinutes: 170, genre: 'Action / Crime / Drama', director: 'Michael Mann', tagline: 'The iconic blue-lit balcony overlooking LAX.', rating: '8.3' }
     ]
   },
+  {
+    id: 'vibe-cult',
+    categoryId: 'vibes',
+    title: 'Cult Classics & Midnight Madness',
+    icon: '🔮',
+    tagline: 'Oddball gems, camp glory, midnight screenings, and unhinged energy',
+    movies: [
+      { id: 'cult-1', title: 'The Rocky Horror Picture Show', year: 1975, runtime: '100 min', runtimeMinutes: 100, genre: 'Comedy / Musical / Sci-Fi', director: 'Jim Sharman', tagline: 'Don\'t dream it, be it. The king of midnight screenings.', rating: '7.4' },
+      { id: 'cult-2', title: 'Donnie Darko', year: 2001, runtime: '113 min', runtimeMinutes: 113, genre: 'Drama / Mystery / Sci-Fi', director: 'Richard Kelly', tagline: '28 days, 6 hours, 42 minutes, 12 seconds.', rating: '8.0' },
+      { id: 'cult-3', title: 'The Room', year: 2003, runtime: '99 min', runtimeMinutes: 99, genre: 'Drama', director: 'Tommy Wiseau', tagline: 'Oh, hi Mark! The greatest so-bad-it\'s-legendary movie ever made.', rating: '3.6' },
+      { id: 'cult-4', title: 'Eraserhead', year: 1977, runtime: '89 min', runtimeMinutes: 89, genre: 'Fantasy / Horror', director: 'David Lynch', tagline: 'A dream of dark and troubling things.', rating: '7.3' },
+      { id: 'cult-5', title: 'Evil Dead II', year: 1987, runtime: '84 min', runtimeMinutes: 84, genre: 'Comedy / Horror', director: 'Sam Raimi', tagline: 'Chainsaw hand and boomstick: groovy!', rating: '7.7' },
+      { id: 'cult-6', title: 'Big Trouble in Little China', year: 1986, runtime: '99 min', runtimeMinutes: 99, genre: 'Action / Adventure / Comedy', director: 'John Carpenter', tagline: 'Jack Burton and the Pork-Chop Express in Chinatown underground.', rating: '7.2' },
+      { id: 'cult-7', title: 'The Warriors', year: 1979, runtime: '93 min', runtimeMinutes: 93, genre: 'Action / Crime / Thriller', director: 'Walter Hill', tagline: 'Warriors, come out to play-i-ay!', rating: '7.5' },
+      { id: 'cult-8', title: 'They Live', year: 1988, runtime: '94 min', runtimeMinutes: 94, genre: 'Action / Horror / Sci-Fi', director: 'John Carpenter', tagline: 'I have come here to chew bubblegum and kick ass... and I\'m all out of bubblegum.', rating: '7.2' },
+      { id: 'cult-9', title: 'Repo Man', year: 1984, runtime: '92 min', runtimeMinutes: 92, genre: 'Comedy / Sci-Fi', director: 'Alex Cox', tagline: 'Punk rock, suburban LA, and a glowing radioactive Chevy Malibu.', rating: '6.8' },
+      { id: 'cult-10', title: 'Mandy', year: 2018, runtime: '121 min', runtimeMinutes: 121, genre: 'Action / Horror / Mystery', director: 'Panos Cosmatos', tagline: 'Nicolas Cage forging a battleaxe and snorting pure rage.', rating: '6.5' },
+      { id: 'cult-11', title: 'Hausu (House)', year: 1977, runtime: '88 min', runtimeMinutes: 88, genre: 'Comedy / Horror', director: 'Nobuhiko Obayashi', tagline: 'A piano eats a girl. Watermelons and flying heads. Truly one of a kind.', rating: '7.3' },
+      { id: 'cult-12', title: 'Videodrome', year: 1983, runtime: '87 min', runtimeMinutes: 87, genre: 'Horror / Sci-Fi', director: 'David Cronenberg', tagline: 'Long live the new flesh.', rating: '7.2' },
+      { id: 'cult-13', title: 'Hardcore Henry', year: 2015, runtime: '96 min', runtimeMinutes: 96, genre: 'Action / Adventure / Sci-Fi', director: 'Ilya Naishuller', tagline: 'Entirely shot from a first-person GoPro perspective.', rating: '6.7' },
+      { id: 'cult-14', title: 'Pink Flamingos', year: 1972, runtime: '93 min', runtimeMinutes: 93, genre: 'Comedy / Crime', director: 'John Waters', tagline: 'An exercise in poor taste featuring Divine.', rating: '6.1' },
+      { id: 'cult-15', title: 'Speed Racer', year: 2008, runtime: '135 min', runtimeMinutes: 135, genre: 'Action / Family / Sci-Fi', director: 'The Wachowskis', tagline: 'A candy-colored psychedelic live-action anime masterpiece ahead of its time.', rating: '6.1' },
+      { id: 'cult-16', title: 'Troll 2', year: 1990, runtime: '95 min', runtimeMinutes: 95, genre: 'Comedy / Fantasy / Horror', director: 'Claudio Fragasso', tagline: 'They\'re eating her... and then they\'re going to eat me! OH MY GOOOOOD!', rating: '3.0' },
+      { id: 'cult-17', title: 'Face/Off', year: 1997, runtime: '138 min', runtimeMinutes: 138, genre: 'Action / Crime / Sci-Fi', director: 'John Woo', tagline: 'I want to take his face... off. Doves, dual golden pistols, pure camp glory.', rating: '7.3' },
+      { id: 'cult-18', title: 'Akira', year: 1988, runtime: '124 min', runtimeMinutes: 124, genre: 'Animation / Action / Sci-Fi', director: 'Katsuhiro Otomo', tagline: 'The legendary red motorcycle slide through Neo-Tokyo.', rating: '8.0' }
+    ]
+  },
+  {
+    id: 'vibe-oscar',
+    categoryId: 'vibes',
+    title: 'Oscar Best Picture Elite',
+    icon: '🏆',
+    tagline: 'The undisputed gold standard of cinematic history and prestige',
+    movies: [
+      { id: 'osc-1', title: 'Parasite', year: 2019, runtime: '132 min', runtimeMinutes: 132, genre: 'Drama / Thriller', director: 'Bong Joon-ho', tagline: 'First non-English film to win Best Picture in Academy history.', rating: '8.5' },
+      { id: 'osc-2', title: 'Oppenheimer', year: 2023, runtime: '180 min', runtimeMinutes: 180, genre: 'Biography / Drama / History', director: 'Christopher Nolan', tagline: '7 Oscars including Best Picture, Best Director, and Best Actor.', rating: '8.9' },
+      { id: 'osc-3', title: 'Everything Everywhere All at Once', year: 2022, runtime: '139 min', runtimeMinutes: 139, genre: 'Action / Adventure / Comedy', director: 'The Daniels', tagline: 'Swept 7 Oscars with multiverse empathy and laundromats.', rating: '7.8' },
+      { id: 'osc-4', title: 'No Country for Old Men', year: 2007, runtime: '122 min', runtimeMinutes: 122, genre: 'Crime / Drama / Thriller', director: 'The Coen Brothers', tagline: 'Anton Chigurh and a pneumatic cattle gun in west Texas.', rating: '8.2' },
+      { id: 'osc-5', title: 'The Departed', year: 2006, runtime: '151 min', runtimeMinutes: 151, genre: 'Crime / Drama / Thriller', director: 'Martin Scorsese', tagline: 'Scorsese\'s long-awaited Oscar triumph with Boston mob intrigue.', rating: '8.5' },
+      { id: 'osc-6', title: 'Gladiator', year: 2000, runtime: '155 min', runtimeMinutes: 155, genre: 'Action / Adventure / Drama', director: 'Ridley Scott', tagline: 'My name is Maximus Decimus Meridius. Father to a murdered son.', rating: '8.5' },
+      { id: 'osc-7', title: 'The Silence of the Lambs', year: 1991, runtime: '118 min', runtimeMinutes: 118, genre: 'Crime / Drama / Thriller', director: 'Jonathan Demme', tagline: 'One of only 3 films in history to sweep all Big Five Oscars.', rating: '8.6' },
+      { id: 'osc-8', title: 'Moonlight', year: 2016, runtime: '111 min', runtimeMinutes: 111, genre: 'Drama', director: 'Barry Jenkins', tagline: 'Three chapters of identity and tenderness under the Miami moonlight.', rating: '7.4' },
+      { id: 'osc-9', title: 'Amadeus', year: 1984, runtime: '160 min', runtimeMinutes: 160, genre: 'Biography / Drama / Music', director: 'Miloš Forman', tagline: '8 Oscars celebrating Mozart\'s heavenly music and Salieri\'s torment.', rating: '8.4' },
+      { id: 'osc-10', title: 'The Godfather', year: 1972, runtime: '175 min', runtimeMinutes: 175, genre: 'Crime / Drama', director: 'Francis Ford Coppola', tagline: 'The defining American crime epic.', rating: '9.2' },
+      { id: 'osc-11', title: 'One Flew Over the Cuckoo\'s Nest', year: 1975, runtime: '133 min', runtimeMinutes: 133, genre: 'Drama', director: 'Miloš Forman', tagline: 'Jack Nicholson vs. Nurse Ratched swept the Big Five Oscars.', rating: '8.7' },
+      { id: 'osc-12', title: 'Schindler\'s List', year: 1993, runtime: '195 min', runtimeMinutes: 195, genre: 'Biography / Drama / History', director: 'Steven Spielberg', tagline: 'Spielberg\'s staggering masterwork that took home 7 Academy Awards.', rating: '9.0' },
+      { id: 'osc-13', title: 'The Lord of the Rings: The Return of the King', year: 2003, runtime: '201 min', runtimeMinutes: 201, genre: 'Action / Adventure / Drama', director: 'Peter Jackson', tagline: 'Won 11 out of 11 Oscar nominations in a historic sweep.', rating: '9.0' },
+      { id: 'osc-14', title: 'Casablanca', year: 1942, runtime: '102 min', runtimeMinutes: 102, genre: 'Drama / Romance / War', director: 'Michael Curtiz', tagline: 'Here\'s looking at you, kid.', rating: '8.5' },
+      { id: 'osc-15', title: 'Birdman', year: 2014, runtime: '119 min', runtimeMinutes: 119, genre: 'Comedy / Drama', director: 'Alejandro G. Iñárritu', tagline: 'Edited to appear as one continuous unbroken shot on Broadway.', rating: '7.7' },
+      { id: 'osc-16', title: 'The Shape of Water', year: 2017, runtime: '123 min', runtimeMinutes: 123, genre: 'Drama / Fantasy / Romance', director: 'Guillermo del Toro', tagline: 'A lush cold-war fairytale of love without words.', rating: '7.3' }
+    ]
+  },
+  {
+    id: 'vibe-food',
+    categoryId: 'vibes',
+    title: 'Food & Culinary Delights (Watch While Eating)',
+    icon: '🍜',
+    tagline: 'Do NOT watch on an empty stomach. Mouthwatering feasts and kitchen passion',
+    movies: [
+      { id: 'food-1', title: 'Chef', year: 2014, runtime: '114 min', runtimeMinutes: 114, genre: 'Comedy / Drama', director: 'Jon Favreau', tagline: 'Melted grilled cheese, mojo pork cubanos, and beignets.', rating: '7.7' },
+      { id: 'food-2', title: 'Ratatouille', year: 2007, runtime: '111 min', runtimeMinutes: 111, genre: 'Animation / Comedy', director: 'Brad Bird', tagline: 'Crisp bread crusts, Thomas Keller\'s confit byaldi, and soup stirring.', rating: '8.1' },
+      { id: 'food-3', title: 'The Menu', year: 2022, runtime: '107 min', runtimeMinutes: 107, genre: 'Comedy / Horror / Thriller', director: 'Mark Mylod', tagline: 'A simple, well-made cheeseburger with crinkle-cut fries.', rating: '7.2' },
+      { id: 'food-4', title: 'Julie & Julia', year: 2009, runtime: '123 min', runtimeMinutes: 123, genre: 'Biography / Drama / Romance', director: 'Nora Ephron', tagline: 'Boeuf bourguignon, sizzling butter, and mastering the art of French cooking.', rating: '7.0' },
+      { id: 'food-5', title: 'Tampopo', year: 1985, runtime: '114 min', runtimeMinutes: 114, genre: 'Comedy', director: 'Juzo Itami', tagline: 'The ramen western: the quest to brew the perfect bowl of noodles.', rating: '7.9' },
+      { id: 'food-6', title: 'Big Night', year: 1996, runtime: '109 min', runtimeMinutes: 109, genre: 'Drama / Comedy', director: 'Campbell Scott, Stanley Tucci', tagline: 'The legendary timpano feast in an authentic Italian kitchen.', rating: '7.3' },
+      { id: 'food-7', title: 'Pig', year: 2021, runtime: '92 min', runtimeMinutes: 92, genre: 'Drama / Mystery', director: 'Michael Sarnoski', tagline: 'Nicolas Cage as a legendary Portland chef who remembers every meal he ever cooked.', rating: '6.9' },
+      { id: 'food-8', title: 'Jiro Dreams of Sushi', year: 2011, runtime: '81 min', runtimeMinutes: 81, genre: 'Documentary', director: 'David Gelb', tagline: '85-year-old sushi master Jiro Ono pursuing perfection in a Tokyo basement.', rating: '7.9' },
+      { id: 'food-9', title: 'Boiling Point', year: 2021, runtime: '92 min', runtimeMinutes: 92, genre: 'Drama / Thriller', director: 'Philip Barantini', tagline: 'One single unbroken real-time shot through a packed London restaurant kitchen.', rating: '7.5' },
+      { id: 'food-10', title: 'Chocolat', year: 2000, runtime: '121 min', runtimeMinutes: 121, genre: 'Drama / Romance', director: 'Lasse Hallström', tagline: 'Rich chili hot chocolate that awakens a quiet French village.', rating: '7.3' },
+      { id: 'food-11', title: 'Eat Drink Man Woman', year: 1994, runtime: '124 min', runtimeMinutes: 124, genre: 'Comedy / Drama / Romance', director: 'Ang Lee', tagline: 'The greatest opening cooking scene in the history of cinema.', rating: '7.8' },
+      { id: 'food-12', title: 'The Hundred-Foot Journey', year: 2014, runtime: '122 min', runtimeMinutes: 122, genre: 'Comedy / Drama', director: 'Lasse Hallström', tagline: 'Indian spices meeting classic Michelin-starred French cuisine across the street.', rating: '7.3' }
+    ]
+  },
+  {
+    id: 'vibe-roadtrip',
+    categoryId: 'vibes',
+    title: 'Summer Vacation & Road Trip Escapes',
+    icon: '🚗',
+    tagline: 'Windows rolled down, highway horizons, and unforgettable detours',
+    movies: [
+      { id: 'rd-1', title: 'Little Miss Sunshine', year: 2006, runtime: '101 min', runtimeMinutes: 101, genre: 'Comedy / Drama', director: 'Jonathan Dayton, Valerie Faris', tagline: 'Pushing a yellow VW bus into gear across the American Southwest.', rating: '7.8' },
+      { id: 'rd-2', title: 'Palm Springs', year: 2020, runtime: '90 min', runtimeMinutes: 90, genre: 'Rom-Com / Sci-Fi', director: 'Max Barbakow', tagline: 'Pool floats, wedding beers, and desert sunsets.', rating: '7.4' },
+      { id: 'rd-3', title: 'The Talented Mr. Ripley', year: 1999, runtime: '139 min', runtimeMinutes: 139, genre: 'Crime / Drama / Thriller', director: 'Anthony Minghella', tagline: 'Sun-drenched Italian coastlines, linen shirts, and dark deceit.', rating: '7.4' },
+      { id: 'rd-4', title: 'Thelma & Louise', year: 1991, runtime: '130 min', runtimeMinutes: 130, genre: 'Adventure / Crime / Drama', director: 'Ridley Scott', tagline: 'A turquoise 1966 Ford Thunderbird heading straight for the Grand Canyon.', rating: '7.6' },
+      { id: 'rd-5', title: 'Y Tu Mamá También', year: 2001, runtime: '106 min', runtimeMinutes: 106, genre: 'Adventure / Comedy / Drama', director: 'Alfonso Cuarón', tagline: 'A road trip to a fictional beach on the Mexican Pacific coast.', rating: '7.7' },
+      { id: 'rd-6', title: 'Call Me by Your Name', year: 2017, runtime: '132 min', runtimeMinutes: 132, genre: 'Drama / Romance', director: 'Luca Guadagnino', tagline: 'Bicycles, peach orchards, and 1980s summer in northern Italy.', rating: '7.8' },
+      { id: 'rd-7', title: 'Almost Famous', year: 2000, runtime: '122 min', runtimeMinutes: 122, genre: 'Adventure / Comedy / Drama', director: 'Cameron Crowe', tagline: 'Singing Tiny Dancer on the Stillwater tour bus.', rating: '7.9' },
+      { id: 'rd-8', title: 'Sideways', year: 2004, runtime: '127 min', runtimeMinutes: 127, genre: 'Comedy / Drama / Romance', director: 'Alexander Payne', tagline: 'I am NOT drinking any f***ing Merlot! Santa Barbara wine country.', rating: '7.5' },
+      { id: 'rd-9', title: 'The Way Way Back', year: 2013, runtime: '103 min', runtimeMinutes: 103, genre: 'Comedy / Drama', director: 'Nat Faxon, Jim Rash', tagline: 'Sam Rockwell making waterpark shifts the greatest summer ever.', rating: '7.4' },
+      { id: 'rd-10', title: 'Dazed and Confused', year: 1993, runtime: '102 min', runtimeMinutes: 102, genre: 'Comedy', director: 'Richard Linklater', tagline: 'Alright, alright, alright. The last day of school in 1976.', rating: '7.6' },
+      { id: 'rd-11', title: 'Moonrise Kingdom', year: 2012, runtime: '94 min', runtimeMinutes: 94, genre: 'Adventure / Comedy', director: 'Wes Anderson', tagline: 'Canoeing and camping on New Penzance Island in 1965.', rating: '7.8' },
+      { id: 'rd-12', title: 'Wet Hot American Summer', year: 2001, runtime: '97 min', runtimeMinutes: 97, genre: 'Comedy', director: 'David Wain', tagline: 'Camp Firewood 1981: absolute satirical summer camp anarchy.', rating: '6.5' }
+    ]
+  },
+  {
+    id: 'vibe-spooky',
+    categoryId: 'vibes',
+    title: 'Halloween & Spooky Season (Fun & Cozy Chills)',
+    icon: '🎃',
+    tagline: 'Fallen leaves, pumpkin spice, ghosts, and cozy macabre charm',
+    movies: [
+      { id: 'spk-1', title: 'The Nightmare Before Christmas', year: 1993, runtime: '76 min', runtimeMinutes: 76, genre: 'Animation / Family / Fantasy', director: 'Henry Selick', tagline: 'What\'s this? What\'s this? Jack Skellington discovers Christmas.', rating: '7.9' },
+      { id: 'spk-2', title: 'Beetlejuice', year: 1988, runtime: '92 min', runtimeMinutes: 92, genre: 'Comedy / Fantasy', director: 'Tim Burton', tagline: 'Day-O! The banana boat dinner party and ghost handbook.', rating: '7.5' },
+      { id: 'spk-3', title: 'Hocus Pocus', year: 1993, runtime: '96 min', runtimeMinutes: 96, genre: 'Comedy / Family / Fantasy', director: 'Kenny Ortega', tagline: 'The Sanderson sisters put a spell on Salem.', rating: '6.9' },
+      { id: 'spk-4', title: 'Coraline', year: 2009, runtime: '100 min', runtimeMinutes: 100, genre: 'Animation / Drama / Family', director: 'Henry Selick', tagline: 'Be careful what you wish for. Button eyes behind the secret door.', rating: '7.8' },
+      { id: 'spk-5', title: 'The Addams Family', year: 1991, runtime: '99 min', runtimeMinutes: 99, genre: 'Comedy / Fantasy', director: 'Barry Sonnenfeld', tagline: 'They\'re creepy and they\'re kooky, mysterious and spooky.', rating: '7.0' },
+      { id: 'spk-6', title: 'What We Do in the Shadows', year: 2014, runtime: '86 min', runtimeMinutes: 86, genre: 'Comedy / Fantasy', director: 'Taika Waititi, Jemaine Clement', tagline: 'We\'re vampires, not monsters. Do your dishes!', rating: '7.6' },
+      { id: 'spk-7', title: 'Shaun of the Dead', year: 2004, runtime: '99 min', runtimeMinutes: 99, genre: 'Comedy / Horror', director: 'Edgar Wright', tagline: 'Throwing vinyl records at backyard zombies.', rating: '7.9' },
+      { id: 'spk-8', title: 'Sleepy Hollow', year: 1999, runtime: '105 min', runtimeMinutes: 105, genre: 'Fantasy / Horror / Mystery', director: 'Tim Burton', tagline: 'Johnny Depp and the Headless Horseman in autumn mist.', rating: '7.3' },
+      { id: 'spk-9', title: 'Trick \'r Treat', year: 2007, runtime: '82 min', runtimeMinutes: 82, genre: 'Comedy / Horror', director: 'Michael Dougherty', tagline: 'Sam and the four rules of Halloween in a brilliant anthology.', rating: '6.7' },
+      { id: 'spk-10', title: 'Edward Scissorhands', year: 1990, runtime: '105 min', runtimeMinutes: 105, genre: 'Drama / Fantasy / Romance', director: 'Tim Burton', tagline: 'The story of an uncommonly gentle man carving ice angels.', rating: '7.9' },
+      { id: 'spk-11', title: 'Ghostbusters', year: 1984, runtime: '105 min', runtimeMinutes: 105, genre: 'Action / Comedy / Fantasy', director: 'Ivan Reitman', tagline: 'Who ya gonna call? Stay Puft Marshmallow Man.', rating: '7.8' },
+      { id: 'spk-12', title: 'Practical Magic', year: 1998, runtime: '104 min', runtimeMinutes: 104, genre: 'Comedy / Drama / Fantasy', director: 'Griffin Dunne', tagline: 'Sandra Bullock and Nicole Kidman in a seaside Victorian witch house.', rating: '6.3' }
+    ]
+  },
+  {
+    id: 'vibe-fantasy',
+    categoryId: 'vibes',
+    title: 'Fantasy & Mythic Quests',
+    icon: '⚔️',
+    tagline: 'Swords, ancient magic, enchanted realms, and epic journeys',
+    movies: [
+      { id: 'fan-1', title: 'The Lord of the Rings: The Fellowship of the Ring', year: 2001, runtime: '178 min', runtimeMinutes: 178, genre: 'Action / Adventure / Drama', director: 'Peter Jackson', tagline: 'One Ring to rule them all. The journey begins in the Shire.', rating: '8.9' },
+      { id: 'fan-2', title: 'The Lord of the Rings: The Two Towers', year: 2002, runtime: '179 min', runtimeMinutes: 179, genre: 'Action / Adventure / Drama', director: 'Peter Jackson', tagline: 'The Battle of Helm\'s Deep in the torrential rain.', rating: '8.8' },
+      { id: 'fan-3', title: 'The Lord of the Rings: The Return of the King', year: 2003, runtime: '201 min', runtimeMinutes: 201, genre: 'Action / Adventure / Drama', director: 'Peter Jackson', tagline: 'For Frodo! Ride of the Rohirrim at sunrise.', rating: '9.0' },
+      { id: 'fan-4', title: 'Pan\'s Labyrinth', year: 2006, runtime: '118 min', runtimeMinutes: 118, genre: 'Drama / Fantasy / War', director: 'Guillermo del Toro', tagline: 'Three tasks set by the faun in a dark Spanish woodland.', rating: '8.2' },
+      { id: 'fan-5', title: 'The Princess Bride', year: 1987, runtime: '98 min', runtimeMinutes: 98, genre: 'Adventure / Comedy / Family', director: 'Rob Reiner', tagline: 'Fencing, fighting, torture, revenge, giants, monsters, chases, escapes, true love, miracles!', rating: '8.0' },
+      { id: 'fan-6', title: 'Spirited Away', year: 2001, runtime: '125 min', runtimeMinutes: 125, genre: 'Animation / Adventure / Family', director: 'Hayao Miyazaki', tagline: 'Chihiro crossing the bridge into the spirit realm.', rating: '8.6' },
+      { id: 'fan-7', title: 'Harry Potter and the Prisoner of Azkaban', year: 2004, runtime: '142 min', runtimeMinutes: 142, genre: 'Adventure / Family / Fantasy', director: 'Alfonso Cuarón', tagline: 'Cuarón\'s visually stunning Hogwarts year with the Knight Bus and Patronus.', rating: '7.9' },
+      { id: 'fan-8', title: 'Stardust', year: 2007, runtime: '127 min', runtimeMinutes: 127, genre: 'Adventure / Family / Fantasy', director: 'Matthew Vaughn', tagline: 'A fallen star, sky pirates, and Michelle Pfeiffer as an ancient witch.', rating: '7.6' },
+      { id: 'fan-9', title: 'The Green Knight', year: 2021, runtime: '130 min', runtimeMinutes: 130, genre: 'Adventure / Drama / Fantasy', director: 'David Lowery', tagline: 'Dev Patel on an Arthurian journey toward honor and mortality.', rating: '6.6' },
+      { id: 'fan-10', title: 'The NeverEnding Story', year: 1984, runtime: '102 min', runtimeMinutes: 102, genre: 'Adventure / Drama / Family', director: 'Wolfgang Petersen', tagline: 'Falkor the luckdragon soaring through the clouds.', rating: '7.3' },
+      { id: 'fan-11', title: 'Willow', year: 1988, runtime: '126 min', runtimeMinutes: 126, genre: 'Action / Adventure / Drama', director: 'Ron Howard', tagline: 'A magical child, a heroic Nelwyn, and Val Kilmer as Madmartigan.', rating: '7.2' },
+      { id: 'fan-12', title: 'Howl\'s Moving Castle', year: 2004, runtime: '119 min', runtimeMinutes: 119, genre: 'Animation / Adventure / Family', director: 'Hayao Miyazaki', tagline: 'Calcifer fueling a steam-powered walking citadel.', rating: '8.2' }
+    ]
+  },
 
   // ==========================================
+    {
+    id: 'vibe-holiday',
+    categoryId: 'vibes',
+    title: 'Holiday Spirit & Christmas Cheer',
+    icon: '🎄',
+    tagline: 'Cozy fires, falling snow, nostalgic chuckles, and festive movie marathons',
+    movies: [
+      { id: 'hol-1', title: 'It\'s a Wonderful Life', year: 1946, runtime: '130 min', runtimeMinutes: 130, genre: 'Drama / Family / Fantasy', director: 'Frank Capra', tagline: 'Every time a bell rings, an angel gets his wings.', rating: '8.6' },
+      { id: 'hol-2', title: 'Die Hard', year: 1988, runtime: '132 min', runtimeMinutes: 132, genre: 'Action / Thriller', director: 'John McTiernan', tagline: 'Yippee-ki-yay. John McClane barefoot at Nakatomi Plaza\'s Christmas party.', rating: '8.2' },
+      { id: 'hol-3', title: 'Home Alone', year: 1990, runtime: '103 min', runtimeMinutes: 103, genre: 'Comedy / Family', director: 'Chris Columbus', tagline: 'Kevin McCallister protecting 671 Lincoln Boulevard with paint cans and tar.', rating: '7.7' },
+      { id: 'hol-4', title: 'Elf', year: 2003, runtime: '97 min', runtimeMinutes: 97, genre: 'Comedy / Family / Fantasy', director: 'Jon Favreau', tagline: 'Buddy the Elf loves syrup, singing loud for all to hear, and maple pop-tarts.', rating: '7.1' },
+      { id: 'hol-5', title: 'The Nightmare Before Christmas', year: 1993, runtime: '76 min', runtimeMinutes: 76, genre: 'Animation / Family / Fantasy', director: 'Henry Selick', tagline: 'Jack Skellington discovers Christmas Town: What\'s this? What\'s this?!', rating: '7.9' },
+      { id: 'hol-6', title: 'The Holiday', year: 2006, runtime: '136 min', runtimeMinutes: 136, genre: 'Comedy / Romance', director: 'Nancy Meyers', tagline: 'Cameron Diaz and Kate Winslet home-swapping between snowy Surrey and sunny LA.', rating: '6.9' },
+      { id: 'hol-7', title: 'Klaus', year: 2019, runtime: '96 min', runtimeMinutes: 96, genre: 'Animation / Adventure / Comedy', director: 'Sergio Pablos', tagline: 'A selfish postman and a reclusive toymaker forge the origin of Santa Claus.', rating: '8.2' },
+      { id: 'hol-8', title: 'National Lampoon\'s Christmas Vacation', year: 1989, runtime: '97 min', runtimeMinutes: 97, genre: 'Comedy', director: 'Jeremiah S. Chechik', tagline: '25,000 imported Italian twinkle lights on the Griswold house.', rating: '7.5' },
+      { id: 'hol-9', title: 'Love Actually', year: 2003, runtime: '135 min', runtimeMinutes: 135, genre: 'Comedy / Drama / Romance', director: 'Richard Curtis', tagline: 'To me, you are perfect. Ten London love stories colliding at Christmas.', rating: '7.6' },
+      { id: 'hol-10', title: 'Gremlins', year: 1984, runtime: '106 min', runtimeMinutes: 106, genre: 'Comedy / Fantasy / Horror', director: 'Joe Dante', tagline: 'Don\'t get them wet, don\'t expose them to light, and never feed them after midnight.', rating: '7.3' },
+      { id: 'hol-11', title: 'Bad Santa', year: 2003, runtime: '92 min', runtimeMinutes: 92, genre: 'Comedy / Crime', director: 'Terry Zwigoff', tagline: 'Billy Bob Thornton as the foul-mouthed safecracking department store Santa.', rating: '7.1' },
+      { id: 'hol-12', title: 'Carol', year: 2015, runtime: '118 min', runtimeMinutes: 118, genre: 'Drama / Romance', director: 'Todd Haynes', tagline: 'Rooney Mara and Cate Blanchett falling in love in 1950s Manhattan winters.', rating: '7.7' }
+    ]
+  },
+  {
+    id: 'vibe-cyberpunk',
+    categoryId: 'vibes',
+    title: 'Cyberpunk & High-Tech Dystopias',
+    icon: '🤖',
+    tagline: 'Neon-drenched skyscrapers, artificial consciousness, chrome augments, and megacorporations',
+    movies: [
+      { id: 'cyb-1', title: 'Blade Runner 2049', year: 2017, runtime: '164 min', runtimeMinutes: 164, genre: 'Action / Drama / Mystery', director: 'Denis Villeneuve', tagline: 'Ryan Gosling as Officer K walking into the orange radioactive haze of Las Vegas.', rating: '8.0' },
+      { id: 'cyb-2', title: 'The Matrix', year: 1999, runtime: '136 min', runtimeMinutes: 136, genre: 'Action / Sci-Fi', director: 'Lana & Lilly Wachowski', tagline: 'Take the red pill: bullet time, leather trench coats, and the desert of the real.', rating: '8.7' },
+      { id: 'cyb-3', title: 'Akira', year: 1988, runtime: '124 min', runtimeMinutes: 124, genre: 'Animation / Action / Sci-Fi', director: 'Katsuhiro Otomo', tagline: 'Biker gangs, psychic military experiments, and the demolition of Neo-Tokyo.', rating: '8.0' },
+      { id: 'cyb-4', title: 'Children of Men', year: 2006, runtime: '109 min', runtimeMinutes: 109, genre: 'Action / Drama / Sci-Fi', director: 'Alfonso Cuarón', tagline: 'No children born in 18 years until one miraculous refugee woman arrives.', rating: '7.9' },
+      { id: 'cyb-5', title: 'Ghost in the Shell', year: 1995, runtime: '83 min', runtimeMinutes: 83, genre: 'Animation / Action / Crime', director: 'Mamoru Oshii', tagline: 'Cyborg police officer Major Kusanagi hunting the enigmatic Puppet Master.', rating: '7.9' },
+      { id: 'cyb-6', title: 'Gattaca', year: 1997, runtime: '106 min', runtimeMinutes: 106, genre: 'Drama / Sci-Fi / Thriller', director: 'Andrew Niccol', tagline: 'Ethan Hawke borrowing Jude Law\'s genetic identity to reach the stars.', rating: '8.0' },
+      { id: 'cyb-7', title: 'Dark City', year: 1998, runtime: '100 min', runtimeMinutes: 100, genre: 'Mystery / Sci-Fi / Thriller', director: 'Alex Proyas', tagline: 'A nocturnal metropolis where the Strangers stop time and rebuild reality at midnight.', rating: '7.6' },
+      { id: 'cyb-8', title: 'Minority Report', year: 2002, runtime: '145 min', runtimeMinutes: 145, genre: 'Action / Mystery / Sci-Fi', director: 'Steven Spielberg', tagline: 'Tom Cruise arrested by the Pre-Crime department before he can commit a future murder.', rating: '7.7' },
+      { id: 'cyb-9', title: 'Total Recall', year: 1990, runtime: '113 min', runtimeMinutes: 113, genre: 'Action / Adventure / Sci-Fi', director: 'Paul Verhoeven', tagline: 'Arnold Schwarzenegger\'s Rekall memory implants spark a war for Martian oxygen.', rating: '7.5' },
+      { id: 'cyb-10', title: 'Her', year: 2013, runtime: '126 min', runtimeMinutes: 126, genre: 'Drama / Romance / Sci-Fi', director: 'Spike Jonze', tagline: 'Joaquin Phoenix falls deeply in love with Scarlett Johansson\'s operating system.', rating: '8.0' },
+      { id: 'cyb-11', title: 'RoboCop', year: 1987, runtime: '102 min', runtimeMinutes: 102, genre: 'Action / Crime / Sci-Fi', director: 'Paul Verhoeven', tagline: 'Dead or alive, you\'re coming with me. Cybernetic law enforcement in Detroit.', rating: '7.6' },
+      { id: 'cyb-12', title: 'Upgrade', year: 2018, runtime: '100 min', runtimeMinutes: 100, genre: 'Action / Sci-Fi / Thriller', director: 'Leigh Whannell', tagline: 'A paralyzed man is implanted with an AI chip that takes over his combat reflexes.', rating: '7.5' }
+    ]
+  },
+  {
+    id: 'vibe-timetravel',
+    categoryId: 'vibes',
+    title: 'Time Loops, Travel & Paradoxes',
+    icon: '⏳',
+    tagline: 'Rewinding history, butterfly effects, recursive time loops, and causality dilemmas',
+    movies: [
+      { id: 'tim-1', title: 'Back to the Future', year: 1985, runtime: '116 min', runtimeMinutes: 116, genre: 'Adventure / Comedy / Sci-Fi', director: 'Robert Zemeckis', tagline: '1.21 gigawatts! Marty McFly and the flux capacitor in 1955 Hill Valley.', rating: '8.5' },
+      { id: 'tim-2', title: 'Interstellar', year: 2014, runtime: '169 min', runtimeMinutes: 169, genre: 'Adventure / Drama / Sci-Fi', director: 'Christopher Nolan', tagline: 'Gravitational time dilation on Miller\'s water planet: seven years per hour.', rating: '8.7' },
+      { id: 'tim-3', title: 'Arrival', year: 2016, runtime: '116 min', runtimeMinutes: 116, genre: 'Drama / Mystery / Sci-Fi', director: 'Denis Villeneuve', tagline: 'Linguist Amy Adams deciphering heptapod symbols that alter human perception of time.', rating: '7.9' },
+      { id: 'tim-4', title: 'Edge of Tomorrow', year: 2014, runtime: '113 min', runtimeMinutes: 113, genre: 'Action / Adventure / Sci-Fi', director: 'Doug Liman', tagline: 'Live. Die. Repeat. Tom Cruise and Emily Blunt combating mimic aliens.', rating: '7.9' },
+      { id: 'tim-5', title: 'Groundhog Day', year: 1993, runtime: '101 min', runtimeMinutes: 101, genre: 'Comedy / Fantasy / Romance', director: 'Harold Ramis', tagline: 'Bill Murray waking up to Sonny & Cher at 6:00 AM every single morning.', rating: '8.0' },
+      { id: 'tim-6', title: 'Twelve Monkeys', year: 1995, runtime: '129 min', runtimeMinutes: 129, genre: 'Mystery / Sci-Fi / Thriller', director: 'Terry Gilliam', tagline: 'Bruce Willis sent back from a viral wasteland to investigate the Army of the 12 Monkeys.', rating: '8.0' },
+      { id: 'tim-7', title: 'Looper', year: 2012, runtime: '119 min', runtimeMinutes: 119, genre: 'Action / Drama / Sci-Fi', director: 'Rian Johnson', tagline: 'Joseph Gordon-Levitt must execute his future self played by Bruce Willis.', rating: '7.4' },
+      { id: 'tim-8', title: 'Palm Springs', year: 2020, runtime: '90 min', runtimeMinutes: 90, genre: 'Comedy / Fantasy / Mystery', director: 'Max Barbakow', tagline: 'Andy Samberg and Cristin Milioti stuck together at a wedding in an endless desert loop.', rating: '7.4' },
+      { id: 'tim-9', title: 'Primer', year: 2004, runtime: '77 min', runtimeMinutes: 77, genre: 'Drama / Sci-Fi / Thriller', director: 'Shane Carruth', tagline: 'Two engineers accidentally invent a time machine in their garage. Ultra-realistic paradoxes.', rating: '6.7' },
+      { id: 'tim-10', title: 'Timecrimes', year: 2007, runtime: '92 min', runtimeMinutes: 92, genre: 'Horror / Mystery / Sci-Fi', director: 'Nacho Vigalondo', tagline: 'A man stumbles into a time travel vat and desperately tries to prevent his own past acts.', rating: '7.1' },
+      { id: 'tim-11', title: 'Predestination', year: 2014, runtime: '97 min', runtimeMinutes: 97, genre: 'Action / Drama / Sci-Fi', director: 'Michael & Peter Spierig', tagline: 'Ethan Hawke as a temporal agent chasing the Fizzle Bomber across interwoven lifetimes.', rating: '7.4' },
+      { id: 'tim-12', title: 'About Time', year: 2013, runtime: '123 min', runtimeMinutes: 123, genre: 'Comedy / Drama / Fantasy', director: 'Richard Curtis', tagline: 'Every man in Tim\'s family can travel back in his own memory by stepping into a dark closet.', rating: '7.8' }
+    ]
+  },
+  {
+    id: 'vibe-sports',
+    categoryId: 'vibes',
+    title: 'Sports Underdogs & Triumphant Glory',
+    icon: '🏆',
+    tagline: 'Locker room speeches, grit, legendary rivalries, and overcoming impossible odds',
+    movies: [
+      { id: 'spo-1', title: 'Rocky', year: 1976, runtime: '120 min', runtimeMinutes: 120, genre: 'Drama / Sport', director: 'John G. Avildsen', tagline: 'Running up the Philadelphia Museum of Art steps to Gonna Fly Now.', rating: '8.1' },
+      { id: 'spo-2', title: 'Moneyball', year: 2011, runtime: '133 min', runtimeMinutes: 133, genre: 'Biography / Drama / Sport', director: 'Bennett Miller', tagline: 'Brad Pitt and Jonah Hill redefining baseball statistics for the Oakland A\'s.', rating: '7.6' },
+      { id: 'spo-3', title: 'Warrior', year: 2011, runtime: '140 min', runtimeMinutes: 140, genre: 'Action / Drama / Sport', director: 'Gavin O\'Connor', tagline: 'Tom Hardy and Joel Edgerton as estranged brothers meeting in the Sparta MMA cage.', rating: '8.1' },
+      { id: 'spo-4', title: 'Raging Bull', year: 1980, runtime: '129 min', runtimeMinutes: 129, genre: 'Biography / Drama / Sport', director: 'Martin Scorsese', tagline: 'Robert De Niro\'s brutal black-and-white portrayal of middleweight Jake LaMotta.', rating: '8.1' },
+      { id: 'spo-5', title: 'Rush', year: 2013, runtime: '123 min', runtimeMinutes: 123, genre: 'Action / Biography / Drama', director: 'Ron Howard', tagline: 'The fiery 1976 Formula 1 championship duel between Niki Lauda and James Hunt.', rating: '8.1' },
+      { id: 'spo-6', title: 'Ford v Ferrari', year: 2019, runtime: '152 min', runtimeMinutes: 152, genre: 'Action / Biography / Drama', director: 'James Mangold', tagline: 'Matt Damon and Christian Bale pushing the GT40 past 7,000 RPM at Le Mans \'66.', rating: '8.1' },
+      { id: 'spo-7', title: 'Remember the Titans', year: 2000, runtime: '113 min', runtimeMinutes: 113, genre: 'Biography / Drama / Sport', director: 'Boaz Yakin', tagline: 'Denzel Washington bringing a divided Virginia high school football team together.', rating: '7.8' },
+      { id: 'spo-8', title: 'Creed', year: 2015, runtime: '133 min', runtimeMinutes: 133, genre: 'Drama / Sport', director: 'Ryan Coogler', tagline: 'Michael B. Jordan trained by Sylvester Stallone\'s aging Rocky Balboa.', rating: '7.6' },
+      { id: 'spo-9', title: 'Miracle', year: 2004, runtime: '135 min', runtimeMinutes: 135, genre: 'Biography / Drama / History', director: 'Gavin O\'Connor', tagline: 'Kurt Russell coaching the 1980 US Olympic hockey team against the Soviets.', rating: '7.5' },
+      { id: 'spo-10', title: 'The Fighter', year: 2010, runtime: '116 min', runtimeMinutes: 116, genre: 'Biography / Drama / Sport', director: 'David O. Russell', tagline: 'Christian Bale and Mark Wahlberg in the Lowell boxing gyms.', rating: '7.8' },
+      { id: 'spo-11', title: 'Coach Carter', year: 2005, runtime: '136 min', runtimeMinutes: 136, genre: 'Biography / Drama / Sport', director: 'Thomas Carter', tagline: 'Samuel L. Jackson locking his undefeated basketball team out of the gym for grades.', rating: '7.3' },
+      { id: 'spo-12', title: 'Hoosiers', year: 1986, runtime: '114 min', runtimeMinutes: 114, genre: 'Drama / Sport', director: 'David Anspaugh', tagline: 'Gene Hackman leading small-town Milan High to Indiana basketball immortality.', rating: '7.5' }
+    ]
+  },
+  {
+    id: 'vibe-courtroom',
+    categoryId: 'vibes',
+    title: 'Courtroom Dramas & Legal Showdowns',
+    icon: '⚖️',
+    tagline: 'Cross-examinations, fiery closing arguments, jury deliberations, and justice on the line',
+    movies: [
+      { id: 'crt-1', title: '12 Angry Men', year: 1957, runtime: '96 min', runtimeMinutes: 96, genre: 'Crime / Drama', director: 'Sidney Lumet', tagline: 'Henry Fonda holding out against 11 other jurors in a sweltering jury room.', rating: '9.0' },
+      { id: 'crt-2', title: 'A Few Good Men', year: 1992, runtime: '138 min', runtimeMinutes: 138, genre: 'Drama / Thriller', director: 'Rob Reiner', tagline: 'You want answers? I want the truth! You can\'t handle the truth!', rating: '7.7' },
+      { id: 'crt-3', title: 'To Kill a Mockingbird', year: 1962, runtime: '129 min', runtimeMinutes: 129, genre: 'Crime / Drama', director: 'Robert Mulligan', tagline: 'Gregory Peck as Atticus Finch defending Tom Robinson in Maycomb, Alabama.', rating: '8.3' },
+      { id: 'crt-4', title: 'Primal Fear', year: 1996, runtime: '129 min', runtimeMinutes: 129, genre: 'Crime / Drama / Mystery', director: 'Gregory Hoblit', tagline: 'Edward Norton\'s staggering debut opposite Richard Gere in a Chicago murder trial.', rating: '7.7' },
+      { id: 'crt-5', title: 'My Cousin Vinny', year: 1992, runtime: '120 min', runtimeMinutes: 120, genre: 'Comedy / Crime', director: 'Jonathan Lynn', tagline: 'Joe Pesci and Marisa Tomei analyzing positraction and tire marks in Alabama.', rating: '7.6' },
+      { id: 'crt-6', title: 'The Verdict', year: 1982, runtime: '129 min', runtimeMinutes: 129, genre: 'Drama', director: 'Sidney Lumet', tagline: 'Paul Newman as an alcoholic Boston lawyer fighting a medical malpractice coverup.', rating: '7.7' },
+      { id: 'crt-7', title: 'Michael Clayton', year: 2007, runtime: '119 min', runtimeMinutes: 119, genre: 'Crime / Drama / Mystery', director: 'Tony Gilroy', tagline: 'George Clooney as a corporate fixer: I\'m not the guy you kill, I\'m the guy you buy out.', rating: '7.2' },
+      { id: 'crt-8', title: 'Anatomy of a Murder', year: 1959, runtime: '161 min', runtimeMinutes: 161, genre: 'Crime / Drama / Mystery', director: 'Otto Preminger', tagline: 'Jimmy Stewart defending an army lieutenant with Duke Ellington\'s jazz score.', rating: '8.0' },
+      { id: 'crt-9', title: 'Witness for the Prosecution', year: 1957, runtime: '116 min', runtimeMinutes: 116, genre: 'Crime / Drama / Mystery', director: 'Billy Wilder', tagline: 'Agatha Christie\'s shocking Old Bailey twists directed by Billy Wilder.', rating: '8.4' },
+      { id: 'crt-10', title: 'Erin Brockovich', year: 2000, runtime: '131 min', runtimeMinutes: 131, genre: 'Biography / Drama', director: 'Steven Soderbergh', tagline: 'Julia Roberts taking down PG&E over contaminated groundwater in Hinkley.', rating: '7.4' },
+      { id: 'crt-11', title: 'Runaway Jury', year: 2003, runtime: '127 min', runtimeMinutes: 127, genre: 'Crime / Drama / Thriller', director: 'Gary Fleder', tagline: 'Gene Hackman, Dustin Hoffman, and John Cusack in a high-stakes gun trial.', rating: '7.1' },
+      { id: 'crt-12', title: 'Just Mercy', year: 2019, runtime: '137 min', runtimeMinutes: 137, genre: 'Biography / Crime / Drama', director: 'Destin Daniel Cretton', tagline: 'Michael B. Jordan and Jamie Foxx in the true story of the Equal Justice Initiative.', rating: '7.6' }
+    ]
+  },
+  {
+    id: 'vibe-survival',
+    categoryId: 'vibes',
+    title: 'Wild Survival & Man vs Nature',
+    icon: '🏔️',
+    tagline: 'Frozen wilderness, open oceans, zero oxygen, and the sheer will to stay alive',
+    movies: [
+      { id: 'srv-1', title: 'The Revenant', year: 2015, runtime: '156 min', runtimeMinutes: 156, genre: 'Action / Adventure / Drama', director: 'Alejandro G. Iñárritu', tagline: 'Leonardo DiCaprio crawling across frozen frontiers in natural light.', rating: '8.0' },
+      { id: 'srv-2', title: 'Cast Away', year: 2000, runtime: '143 min', runtimeMinutes: 143, genre: 'Adventure / Drama / Romance', director: 'Robert Zemeckis', tagline: 'Tom Hanks stranded on a deserted Pacific island with his volleyball Wilson.', rating: '7.8' },
+      { id: 'srv-3', title: '127 Hours', year: 2010, runtime: '94 min', runtimeMinutes: 94, genre: 'Biography / Drama', director: 'Danny Boyle', tagline: 'James Franco trapped by a boulder in a Utah canyon for five harrowing days.', rating: '7.5' },
+      { id: 'srv-4', title: 'Gravity', year: 2013, runtime: '91 min', runtimeMinutes: 91, genre: 'Action / Drama / Sci-Fi', director: 'Alfonso Cuarón', tagline: 'Sandra Bullock tumbling through space debris after satellite destruction.', rating: '7.7' },
+      { id: 'srv-5', title: 'Into the Wild', year: 2007, runtime: '148 min', runtimeMinutes: 148, genre: 'Adventure / Biography / Drama', director: 'Sean Penn', tagline: 'Emile Hirsch as Christopher McCandless hitchhiking to live off the Alaskan land.', rating: '8.1' },
+      { id: 'srv-6', title: 'Apollo 13', year: 1995, runtime: '140 min', runtimeMinutes: 140, genre: 'Adventure / Drama / History', director: 'Ron Howard', tagline: 'Houston, we have a problem. Bringing three astronauts home on frozen batteries.', rating: '7.7' },
+      { id: 'srv-7', title: 'Captain Phillips', year: 2013, runtime: '134 min', runtimeMinutes: 134, genre: 'Action / Biography / Crime', director: 'Paul Greengrass', tagline: 'Barkhad Abdi: Look at me. I\'m the captain now. Somali pirate standoff.', rating: '7.8' },
+      { id: 'srv-8', title: 'The Grey', year: 2011, runtime: '117 min', runtimeMinutes: 117, genre: 'Action / Adventure / Drama', director: 'Joe Carnahan', tagline: 'Liam Neeson taping broken miniature bottles to his fists against arctic wolves.', rating: '6.8' },
+      { id: 'srv-9', title: 'All Is Lost', year: 2013, runtime: '106 min', runtimeMinutes: 106, genre: 'Action / Adventure / Drama', director: 'J.C. Chandor', tagline: 'Robert Redford battling a sinking sailboat in the Indian Ocean with almost no dialogue.', rating: '6.9' },
+      { id: 'srv-10', title: 'Touching the Void', year: 2003, runtime: '106 min', runtimeMinutes: 106, genre: 'Documentary / Adventure / Drama', director: 'Kevin Macdonald', tagline: 'The miraculous survival of two mountaineers on Siula Grande in the Peruvian Andes.', rating: '8.0' },
+      { id: 'srv-11', title: 'Life of Pi', year: 2012, runtime: '127 min', runtimeMinutes: 127, genre: 'Adventure / Drama / Fantasy', director: 'Ang Lee', tagline: 'Surviving 227 days adrift in a lifeboat with a Royal Bengal tiger named Richard Parker.', rating: '7.9' },
+      { id: 'srv-12', title: 'Society of the Snow', year: 2023, runtime: '144 min', runtimeMinutes: 144, genre: 'Adventure / Biography / Drama', director: 'J.A. Bayona', tagline: 'The 1972 Uruguayan rugby team stranded high in the freezing Andes mountains.', rating: '7.8' }
+    ]
+  },
+  {
+    id: 'vibe-autumn',
+    categoryId: 'vibes',
+    title: 'Cozy Fall & Autumn Melancholy',
+    icon: '🍂',
+    tagline: 'Golden leaves, cable-knit sweaters, rainy college campuses, and crisp cider evenings',
+    movies: [
+      { id: 'aut-1', title: 'Dead Poets Society', year: 1989, runtime: '128 min', runtimeMinutes: 128, genre: 'Comedy / Drama', director: 'Peter Weir', tagline: 'Robin Williams inspiring prep school boys in autumn New England: Carpe Diem!', rating: '8.1' },
+      { id: 'aut-2', title: 'When Harry Met Sally...', year: 1989, runtime: '96 min', runtimeMinutes: 96, genre: 'Comedy / Drama / Romance', director: 'Rob Reiner', tagline: 'Walking through orange Central Park trees arguing whether men and women can be friends.', rating: '7.7' },
+      { id: 'aut-3', title: 'Good Will Hunting', year: 1997, runtime: '126 min', runtimeMinutes: 126, genre: 'Drama', director: 'Gus Van Sant', tagline: 'Fall in Boston: chalkboards, MIT hallways, and Boston Common benches.', rating: '8.3' },
+      { id: 'aut-4', title: 'Knives Out', year: 2019, runtime: '130 min', runtimeMinutes: 130, genre: 'Comedy / Crime / Mystery', director: 'Rian Johnson', tagline: 'Chris Evans in the cable-knit sweater at the gothic Thrombey mansion.', rating: '7.9' },
+      { id: 'aut-5', title: 'The Holdovers', year: 2023, runtime: '133 min', runtimeMinutes: 133, genre: 'Comedy / Drama', director: 'Alexander Payne', tagline: 'Paul Giamatti and a rebellious student snowbound at a 1970 New England boarding school.', rating: '7.9' },
+      { id: 'aut-6', title: 'Fantastic Mr. Fox', year: 2009, runtime: '87 min', runtimeMinutes: 87, genre: 'Animation / Adventure / Comedy', director: 'Wes Anderson', tagline: 'Warm orange, amber, and cider color palettes with stop-motion charm.', rating: '7.9' },
+      { id: 'aut-7', title: 'Rushmore', year: 1998, runtime: '93 min', runtimeMinutes: 93, genre: 'Comedy / Drama', director: 'Wes Anderson', tagline: 'Jason Schwartzman\'s prep school blazer and extracurricular obsession in fall.', rating: '7.6' },
+      { id: 'aut-8', title: 'Autumn in New York', year: 2000, runtime: '103 min', runtimeMinutes: 103, genre: 'Drama / Romance', director: 'Joan Chen', tagline: 'Richard Gere and Winona Ryder beneath amber foliage in Central Park.', rating: '5.6' },
+      { id: 'aut-9', title: 'Practical Magic', year: 1998, runtime: '104 min', runtimeMinutes: 104, genre: 'Comedy / Drama / Fantasy', director: 'Griffin Dunne', tagline: 'Midnight margaritas and witchy Massachusetts autumn vibes.', rating: '6.3' },
+      { id: 'aut-10', title: 'Dan in Real Life', year: 2007, runtime: '98 min', runtimeMinutes: 98, genre: 'Comedy / Drama / Romance', director: 'Peter Hedges', tagline: 'Steve Carell and family gathered in a breezy Rhode Island coastal cottage.', rating: '6.8' },
+      { id: 'aut-11', title: 'Mystic Pizza', year: 1988, runtime: '104 min', runtimeMinutes: 104, genre: 'Comedy / Drama / Romance', director: 'Donald Petrie', tagline: 'Julia Roberts in a small Connecticut seaport town pizza parlor in autumn.', rating: '6.3' },
+      { id: 'aut-12', title: 'Little Women', year: 2019, runtime: '135 min', runtimeMinutes: 135, genre: 'Drama / Romance', director: 'Greta Gerwig', tagline: 'Warm fireplaces, cozy scarves, and sisterhood in Concord, Massachusetts.', rating: '7.8' }
+    ]
+  },
+  {
+    id: 'vibe-raunchy',
+    categoryId: 'vibes',
+    title: '2000s R-Rated Raunchy Comedies',
+    icon: '🍻',
+    tagline: 'Fake IDs, unhinged quotes, Vegas hangovers, and laugh-until-your-stomach-hurts classics',
+    movies: [
+      { id: 'rau-1', title: 'Superbad', year: 2007, runtime: '113 min', runtimeMinutes: 113, genre: 'Comedy', director: 'Greg Mottola', tagline: 'McLovin, Hawaii fake IDs, and Jonah Hill trying to get liquor to a house party.', rating: '7.6' },
+      { id: 'rau-2', title: 'Step Brothers', year: 2008, runtime: '98 min', runtimeMinutes: 98, genre: 'Comedy', director: 'Adam McKay', tagline: 'Did we just become best friends? Will Ferrell and John C. Reilly building bunk beds.', rating: '6.9' },
+      { id: 'rau-3', title: 'Tropic Thunder', year: 2008, runtime: '107 min', runtimeMinutes: 107, genre: 'Action / Comedy', director: 'Ben Stiller', tagline: 'Never go full... Ben Stiller, Robert Downey Jr., and Tom Cruise as Les Grossman.', rating: '7.1' },
+      { id: 'rau-4', title: 'The Hangover', year: 2009, runtime: '100 min', runtimeMinutes: 100, genre: 'Comedy', director: 'Todd Phillips', tagline: 'A missing groom, a tiger in the bathroom, and Mike Tyson in Las Vegas.', rating: '7.7' },
+      { id: 'rau-5', title: 'Pineapple Express', year: 2008, runtime: '112 min', runtimeMinutes: 112, genre: 'Action / Comedy / Crime', director: 'David Gordon Green', tagline: 'Seth Rogen and James Franco on the run from corrupt cops and drug cartels.', rating: '6.9' },
+      { id: 'rau-6', title: '21 Jump Street', year: 2012, runtime: '109 min', runtimeMinutes: 109, genre: 'Action / Comedy / Crime', director: 'Phil Lord & Christopher Miller', tagline: 'Jonah Hill and Channing Tatum undercover as high school students.', rating: '7.2' },
+      { id: 'rau-7', title: 'Forgetting Sarah Marshall', year: 2008, runtime: '111 min', runtimeMinutes: 111, genre: 'Comedy / Drama / Romance', director: 'Nicholas Stoller', tagline: 'Jason Segel escaping heartbreak in Hawaii only to bump into his ex and Russell Brand.', rating: '7.1' },
+      { id: 'rau-8', title: 'Wedding Crashers', year: 2005, runtime: '119 min', runtimeMinutes: 119, genre: 'Comedy / Romance', director: 'David Dobkin', tagline: 'Vince Vaughn and Owen Wilson crashing receptions for free food and romance.', rating: '7.1' },
+      { id: 'rau-9', title: 'Anchorman: The Legend of Ron Burgundy', year: 2004, runtime: '94 min', runtimeMinutes: 94, genre: 'Comedy', director: 'Adam McKay', tagline: 'I\'m Ron Burgundy? San Diego newsroom brawls with tridents and grenades.', rating: '7.1' },
+      { id: 'rau-10', title: 'Dodgeball: A True Underdog Story', year: 2004, runtime: '92 min', runtimeMinutes: 92, genre: 'Comedy / Sport', director: 'Rawson Marshall Thurber', tagline: 'If you can dodge a wrench, you can dodge a ball! Average Joe\'s vs Globo Gym.', rating: '6.7' },
+      { id: 'rau-11', title: 'Old School', year: 2003, runtime: '88 min', runtimeMinutes: 88, genre: 'Comedy', director: 'Todd Phillips', tagline: 'Frank the Tank streaking through the quad into the gymnasium.', rating: '7.0' },
+      { id: 'rau-12', title: 'Role Models', year: 2008, runtime: '99 min', runtimeMinutes: 99, genre: 'Comedy', director: 'David Wain', tagline: 'Paul Rudd and Seann William Scott doing community service in medieval LARPing.', rating: '6.8' }
+    ]
+  },
+  {
+    id: 'vibe-war',
+    categoryId: 'vibes',
+    title: 'Epic War & Frontline Battlefields',
+    icon: '🎖️',
+    tagline: 'Visceral trench warfare, brotherhood under fire, Omaha Beach, and anti-war classics',
+    movies: [
+      { id: 'war-1', title: 'Saving Private Ryan', year: 1998, runtime: '169 min', runtimeMinutes: 169, genre: 'Drama / War', director: 'Steven Spielberg', tagline: 'The first 27 minutes of the Normandy landing: staggering, visceral history.', rating: '8.6' },
+      { id: 'war-2', title: 'Apocalypse Now', year: 1979, runtime: '147 min', runtimeMinutes: 147, genre: 'Drama / Mystery / War', director: 'Francis Ford Coppola', tagline: 'I love the smell of napalm in the morning. Martin Sheen into the Cambodian jungle.', rating: '8.4' },
+      { id: 'war-3', title: '1917', year: 2019, runtime: '119 min', runtimeMinutes: 119, genre: 'Action / Drama / War', director: 'Sam Mendes', tagline: 'Roger Deakins\' seamless single-take dash across WWI No Man\'s Land.', rating: '8.2' },
+      { id: 'war-4', title: 'Full Metal Jacket', year: 1987, runtime: '116 min', runtimeMinutes: 116, genre: 'Drama / War', director: 'Stanley Kubrick', tagline: 'R. Lee Ermey\'s unsparing Parris Island drill sergeant and the ruins of Hue.', rating: '8.2' },
+      { id: 'war-5', title: 'Platoon', year: 1986, runtime: '120 min', runtimeMinutes: 120, genre: 'Drama / War', director: 'Oliver Stone', tagline: 'Willem Dafoe on his knees to Samuel Barber\'s Adagio for Strings.', rating: '8.1' },
+      { id: 'war-6', title: 'Dunkirk', year: 2017, runtime: '106 min', runtimeMinutes: 106, genre: 'Action / Drama / History', director: 'Christopher Nolan', tagline: 'Land, sea, and air timelines converging with a ticking clock score.', rating: '7.8' },
+      { id: 'war-7', title: 'The Thin Red Line', year: 1998, runtime: '170 min', runtimeMinutes: 170, genre: 'Drama / War', director: 'Terrence Malick', tagline: 'Poetic Guadalcanal reflections on nature, humanity, and destruction.', rating: '7.6' },
+      { id: 'war-8', title: 'Paths of Glory', year: 1957, runtime: '88 min', runtimeMinutes: 88, genre: 'Drama / War', director: 'Stanley Kubrick', tagline: 'Kirk Douglas defending three scapegoated French soldiers in WWI trenches.', rating: '8.4' },
+      { id: 'war-9', title: 'All Quiet on the Western Front', year: 2022, runtime: '148 min', runtimeMinutes: 148, genre: 'Action / Drama / War', director: 'Edward Berger', tagline: 'The horrific brutality of the Western Front from the German perspective.', rating: '7.8' },
+      { id: 'war-10', title: 'Hacksaw Ridge', year: 2016, runtime: '139 min', runtimeMinutes: 139, genre: 'Biography / Drama / History', director: 'Mel Gibson', tagline: 'Desmond Doss saving 75 wounded comrades on Maeda Escarpment without a weapon.', rating: '8.1' },
+      { id: 'war-11', title: 'The Bridge on the River Kwai', year: 1957, runtime: '161 min', runtimeMinutes: 161, genre: 'Adventure / Drama / War', director: 'David Lean', tagline: 'Alec Guinness whistling Colonel Bogey March building a railway bridge in Burma.', rating: '8.1' },
+      { id: 'war-12', title: 'Black Hawk Down', year: 2001, runtime: '144 min', runtimeMinutes: 144, genre: 'Action / Drama / History', director: 'Ridley Scott', tagline: 'Two downed helicopters and non-stop street fighting in Mogadishu.', rating: '7.7' }
+    ]
+  },
+  {
+    id: 'vibe-prison',
+    categoryId: 'vibes',
+    title: 'Prison Escapes & Hard Time',
+    icon: '🗝️',
+    tagline: 'Rock hammers, iron bars, corrupt wardens, unbreakable camaraderie, and daring tunnels',
+    movies: [
+      { id: 'pri-1', title: 'The Shawshank Redemption', year: 1994, runtime: '142 min', runtimeMinutes: 142, genre: 'Drama', director: 'Frank Darabont', tagline: 'Andy Dufresne crawled to freedom through 500 yards of foulness.', rating: '9.3' },
+      { id: 'pri-2', title: 'The Green Mile', year: 1999, runtime: '189 min', runtimeMinutes: 189, genre: 'Crime / Drama / Fantasy', director: 'Frank Darabont', tagline: 'Miracles on Death Row with John Coffey and Paul Edgecomb.', rating: '8.6' },
+      { id: 'pri-3', title: 'Escape from Alcatraz', year: 1979, runtime: '112 min', runtimeMinutes: 112, genre: 'Biography / Crime / Drama', director: 'Don Siegel', tagline: 'Clint Eastwood using spoons, papier-mâché heads, and raincoats to escape The Rock.', rating: '7.6' },
+      { id: 'pri-4', title: 'Papillon', year: 1973, runtime: '151 min', runtimeMinutes: 151, genre: 'Biography / Crime / Drama', director: 'Franklin J. Schaffner', tagline: 'Steve McQueen and Dustin Hoffman in the brutal penal colony of Devil\'s Island.', rating: '8.0' },
+      { id: 'pri-5', title: 'Cool Hand Luke', year: 1967, runtime: '127 min', runtimeMinutes: 127, genre: 'Crime / Drama', director: 'Stuart Rosenberg', tagline: 'What we\'ve got here is failure to communicate. Paul Newman eating 50 hard-boiled eggs.', rating: '8.1' },
+      { id: 'pri-6', title: 'A Prophet', year: 2009, runtime: '155 min', runtimeMinutes: 155, genre: 'Crime / Drama', director: 'Jacques Audiard', tagline: 'A young Algerian inmate rises to mastermind criminal power inside a French prison.', rating: '7.8' },
+      { id: 'pri-7', title: 'The Great Escape', year: 1963, runtime: '172 min', runtimeMinutes: 172, genre: 'Adventure / Drama / History', director: 'John Sturges', tagline: 'Allied POWs digging Tom, Dick, and Harry tunnels under German Stalag Luft III.', rating: '8.2' },
+      { id: 'pri-8', title: 'Brawl in Cell Block 99', year: 2017, runtime: '132 min', runtimeMinutes: 132, genre: 'Action / Crime / Drama', director: 'S. Craig Zahler', tagline: 'Vince Vaughn skull-cracking his way into max-security Redleaf prison.', rating: '7.1' },
+      { id: 'pri-9', title: 'Midnight Express', year: 1978, runtime: '121 min', runtimeMinutes: 121, genre: 'Biography / Crime / Drama', director: 'Alan Parker', tagline: 'An American college student caught smuggling hashish in a hellish Turkish prison.', rating: '7.5' },
+      { id: 'pri-10', title: 'Starred Up', year: 2013, runtime: '106 min', runtimeMinutes: 106, genre: 'Crime / Drama', director: 'David Mackenzie', tagline: 'Jack O\'Connell moved up prematurely to an adult prison where his father is a lifer.', rating: '7.3' }
+    ]
+  },
+
   // --- DIRECTORS ---
   // ==========================================
   {
@@ -1086,6 +1495,237 @@ export const PRESET_LISTS = [
       { id: 'gdt-6', title: 'The Devil\'s Backbone', year: 2001, runtime: '106 min', runtimeMinutes: 106, genre: 'Drama / Horror / Mystery', director: 'Guillermo del Toro', tagline: 'What is a ghost? A tragedy condemned to repeat itself.', rating: '7.4' },
       { id: 'gdt-7', title: 'Crimson Peak', year: 2015, runtime: '119 min', runtimeMinutes: 119, genre: 'Drama / Fantasy / Horror', director: 'Guillermo del Toro', tagline: 'Beware of Crimson Peak. A gothic romance steeped in red clay.', rating: '6.5' },
       { id: 'gdt-8', title: 'Guillermo del Toro\'s Pinocchio', year: 2022, runtime: '117 min', runtimeMinutes: 117, genre: 'Animation / Drama / Family', director: 'Guillermo del Toro', tagline: 'Stop-motion masterpiece exploring mortality and fathers.', rating: '7.6' }
+    ]
+  },
+  {
+    id: 'dir-hitchcock',
+    categoryId: 'directors',
+    title: 'Alfred Hitchcock',
+    icon: '🦅',
+    tagline: 'The Master of Suspense: voyeurism, innocent men accused, and psychological terror',
+    movies: [
+      { id: 'hitch-1', title: 'Rear Window', year: 1954, runtime: '112 min', runtimeMinutes: 112, genre: 'Mystery / Thriller', director: 'Alfred Hitchcock', tagline: 'Watching the neighbors across the courtyard in the sweltering heat.', rating: '8.5' },
+      { id: 'hitch-2', title: 'Psycho', year: 1960, runtime: '109 min', runtimeMinutes: 109, genre: 'Horror / Mystery / Thriller', director: 'Alfred Hitchcock', tagline: 'The Bates Motel and the shower shrieks that changed cinema.', rating: '8.5' },
+      { id: 'hitch-3', title: 'Vertigo', year: 1958, runtime: '128 min', runtimeMinutes: 128, genre: 'Mystery / Romance / Thriller', director: 'Alfred Hitchcock', tagline: 'A retired detective obsessed with a spiraling blonde illusion.', rating: '8.3' },
+      { id: 'hitch-4', title: 'North by Northwest', year: 1959, runtime: '136 min', runtimeMinutes: 136, genre: 'Action / Adventure / Mystery', director: 'Alfred Hitchcock', tagline: 'Cary Grant fleeing a crop duster biplane in an open cornfield.', rating: '8.3' },
+      { id: 'hitch-5', title: 'Dial M for Murder', year: 1954, runtime: '105 min', runtimeMinutes: 105, genre: 'Crime / Thriller', director: 'Alfred Hitchcock', tagline: 'The telephone call, the latchkey, and the scissors.', rating: '8.2' },
+      { id: 'hitch-6', title: 'Rope', year: 1948, runtime: '80 min', runtimeMinutes: 80, genre: 'Crime / Drama / Thriller', director: 'Alfred Hitchcock', tagline: 'Edited into seamless continuous takes inside a Manhattan apartment party.', rating: '7.9' },
+      { id: 'hitch-7', title: 'Strangers on a Train', year: 1951, runtime: '101 min', runtimeMinutes: 101, genre: 'Crime / Drama / Film-Noir', director: 'Alfred Hitchcock', tagline: 'Criss-cross: two strangers trading murders with zero motives.', rating: '7.9' },
+      { id: 'hitch-8', title: 'The Birds', year: 1963, runtime: '119 min', runtimeMinutes: 119, genre: 'Drama / Horror / Mystery', director: 'Alfred Hitchcock', tagline: 'Why did they attack? Unexplained feathered terror in Bodega Bay.', rating: '7.6' },
+      { id: 'hitch-9', title: 'Shadow of a Doubt', year: 1943, runtime: '108 min', runtimeMinutes: 108, genre: 'Film-Noir / Thriller', director: 'Alfred Hitchcock', tagline: 'Hitchcock\'s personal favorite: beloved Uncle Charlie is the Merry Widow killer.', rating: '7.8' },
+      { id: 'hitch-10', title: 'The 39 Steps', year: 1935, runtime: '86 min', runtimeMinutes: 86, genre: 'Action / Mystery / Thriller', director: 'Alfred Hitchcock', tagline: 'The prototype of the man-on-the-run espionage thriller across the Scottish moors.', rating: '7.6' }
+    ]
+  },
+  {
+    id: 'dir-ridley',
+    categoryId: 'directors',
+    title: 'Ridley Scott',
+    icon: '⚔️',
+    tagline: 'World-building atmosphere, colossal historical epics, and gritty sci-fi',
+    movies: [
+      { id: 'rid-1', title: 'Alien', year: 1979, runtime: '117 min', runtimeMinutes: 117, genre: 'Horror / Sci-Fi', director: 'Ridley Scott', tagline: 'The Nostromo, the facehugger, and Sigourney Weaver\'s Ellen Ripley.', rating: '8.5' },
+      { id: 'rid-2', title: 'Blade Runner', year: 1982, runtime: '117 min', runtimeMinutes: 117, genre: 'Sci-Fi / Neo-Noir', director: 'Ridley Scott', tagline: 'Tears in rain: the ultimate cyberpunk noir.', rating: '8.1' },
+      { id: 'rid-3', title: 'Gladiator', year: 2000, runtime: '155 min', runtimeMinutes: 155, genre: 'Action / Adventure / Drama', director: 'Ridley Scott', tagline: 'Strength and honor in the Colosseum of Rome.', rating: '8.5' },
+      { id: 'rid-4', title: 'The Martian', year: 2015, runtime: '144 min', runtimeMinutes: 144, genre: 'Adventure / Drama / Sci-Fi', director: 'Ridley Scott', tagline: 'I\'m going to have to science the s*** out of this.', rating: '8.0' },
+      { id: 'rid-5', title: 'Thelma & Louise', year: 1991, runtime: '130 min', runtimeMinutes: 130, genre: 'Adventure / Crime / Drama', director: 'Ridley Scott', tagline: 'Geena Davis and Susan Sarandon in the iconic American road trip.', rating: '7.6' },
+      { id: 'rid-6', title: 'Black Hawk Down', year: 2001, runtime: '144 min', runtimeMinutes: 144, genre: 'Action / Drama / History', director: 'Ridley Scott', tagline: 'Relentless combat cinematography in the streets of Mogadishu.', rating: '7.7' },
+      { id: 'rid-7', title: 'American Gangster', year: 2007, runtime: '157 min', runtimeMinutes: 157, genre: 'Biography / Crime / Drama', director: 'Ridley Scott', tagline: 'Denzel Washington as Frank Lucas and Russell Crowe as Richie Roberts.', rating: '7.8' },
+      { id: 'rid-8', title: 'Kingdom of Heaven (Director\'s Cut)', year: 2005, runtime: '194 min', runtimeMinutes: 194, genre: 'Action / Adventure / Drama', director: 'Ridley Scott', tagline: 'The restored 3-hour director\'s cut is widely recognized as a historical masterpiece.', rating: '7.3' },
+      { id: 'rid-9', title: 'Prometheus', year: 2012, runtime: '124 min', runtimeMinutes: 124, genre: 'Adventure / Mystery / Sci-Fi', director: 'Ridley Scott', tagline: 'Michael Fassbender as the android David searching for our creators.', rating: '7.0' },
+      { id: 'rid-10', title: 'Matchstick Men', year: 2003, runtime: '116 min', runtimeMinutes: 116, genre: 'Comedy / Crime / Drama', director: 'Ridley Scott', tagline: 'Nicolas Cage as an obsessive-compulsive con artist with a sudden teenage daughter.', rating: '7.3' }
+    ]
+  },
+  {
+    id: 'dir-pta',
+    categoryId: 'directors',
+    title: 'Paul Thomas Anderson',
+    icon: '🎞️',
+    tagline: 'Flawed American dreamers, orchestral intensity, long tracking shots, and raw passion',
+    movies: [
+      { id: 'pta-1', title: 'There Will Be Blood', year: 2007, runtime: '158 min', runtimeMinutes: 158, genre: 'Drama', director: 'Paul Thomas Anderson', tagline: 'Daniel Day-Lewis as oilman Daniel Plainview. One of the greatest performances ever filmed.', rating: '8.2' },
+      { id: 'pta-2', title: 'Boogie Nights', year: 1997, runtime: '155 min', runtimeMinutes: 155, genre: 'Drama', director: 'Paul Thomas Anderson', tagline: 'The golden age of the 1970s San Fernando Valley adult film boom.', rating: '7.9' },
+      { id: 'pta-3', title: 'Magnolia', year: 1999, runtime: '188 min', runtimeMinutes: 188, genre: 'Drama', director: 'Paul Thomas Anderson', tagline: 'Aimee Mann songs, interconnected Los Angeles souls, and frogs falling from the sky.', rating: '8.0' },
+      { id: 'pta-4', title: 'Punch-Drunk Love', year: 2002, runtime: '95 min', runtimeMinutes: 95, genre: 'Comedy / Drama / Romance', director: 'Paul Thomas Anderson', tagline: 'Adam Sandler in a brilliant blue suit buying thousands of chocolate puddings for frequent flyer miles.', rating: '7.3' },
+      { id: 'pta-5', title: 'Phantom Thread', year: 2017, runtime: '130 min', runtimeMinutes: 130, genre: 'Drama / Romance', director: 'Paul Thomas Anderson', tagline: 'Daniel Day-Lewis as a perfectionist dressmaker and the buttered asparagus.', rating: '7.4' },
+      { id: 'pta-6', title: 'Licorice Pizza', year: 2021, runtime: '133 min', runtimeMinutes: 133, genre: 'Comedy / Drama / Romance', director: 'Paul Thomas Anderson', tagline: 'Waterbed businesses and cruising the San Fernando Valley in a gas-crisis truck.', rating: '7.1' },
+      { id: 'pta-7', title: 'The Master', year: 2012, runtime: '138 min', runtimeMinutes: 138, genre: 'Drama', director: 'Paul Thomas Anderson', tagline: 'Joaquin Phoenix and Philip Seymour Hoffman in an electric psychological duel.', rating: '7.1' },
+      { id: 'pta-8', title: 'Hard Eight', year: 1996, runtime: '101 min', runtimeMinutes: 101, genre: 'Crime / Drama', director: 'Paul Thomas Anderson', tagline: 'Philip Baker Hall and John C. Reilly in Reno casinos.', rating: '7.1' }
+    ]
+  },
+  {
+    id: 'dir-lynch',
+    categoryId: 'directors',
+    title: 'David Lynch',
+    icon: '☕',
+    tagline: 'Dream logic, surrealist dread, 1950s rockabilly nostalgia, and dark secrets behind white picket fences',
+    movies: [
+      { id: 'lyn-1', title: 'Mulholland Drive', year: 2001, runtime: '147 min', runtimeMinutes: 147, genre: 'Drama / Mystery / Thriller', director: 'David Lynch', tagline: 'Named the greatest film of the 21st century by BBC Culture.', rating: '7.9' },
+      { id: 'lyn-2', title: 'Blue Velvet', year: 1986, runtime: '120 min', runtimeMinutes: 120, genre: 'Crime / Drama / Mystery', director: 'David Lynch', tagline: 'Dennis Hopper with an oxygen mask and Isabella Rossellini in a dark neo-noir.', rating: '7.7' },
+      { id: 'lyn-3', title: 'Eraserhead', year: 1977, runtime: '89 min', runtimeMinutes: 89, genre: 'Fantasy / Horror', director: 'David Lynch', tagline: 'The lady in the radiator sings in pencil-eraser purgatory.', rating: '7.3' },
+      { id: 'lyn-4', title: 'The Elephant Man', year: 1980, runtime: '124 min', runtimeMinutes: 124, genre: 'Biography / Drama', director: 'David Lynch', tagline: 'I am not an elephant! I am not an animal! I am a human being!', rating: '8.2' },
+      { id: 'lyn-5', title: 'Twin Peaks: Fire Walk with Me', year: 1992, runtime: '134 min', runtimeMinutes: 134, genre: 'Drama / Horror / Mystery', director: 'David Lynch', tagline: 'Sheryl Lee\'s transcendent performance as Laura Palmer in her final seven days.', rating: '7.3' },
+      { id: 'lyn-6', title: 'Lost Highway', year: 1997, runtime: '134 min', runtimeMinutes: 134, genre: 'Mystery / Thriller', director: 'David Lynch', tagline: 'Dick Laurent is dead. A saxophonist transforms inside a desert jail cell.', rating: '7.6' },
+      { id: 'lyn-7', title: 'The Straight Story', year: 1999, runtime: '112 min', runtimeMinutes: 112, genre: 'Biography / Drama', director: 'David Lynch', tagline: 'An elderly man drives a John Deere lawnmower across Iowa to visit his dying brother.', rating: '8.0' },
+      { id: 'lyn-8', title: 'Wild at Heart', year: 1990, runtime: '125 min', runtimeMinutes: 125, genre: 'Comedy / Crime / Drama', director: 'David Lynch', tagline: 'Nicolas Cage in a snakeskin jacket and Laura Dern on the run.', rating: '7.2' }
+    ]
+  },
+  {
+    id: 'dir-gus',
+    categoryId: 'directors',
+    title: 'Gus Van Sant',
+    icon: '🛹',
+    tagline: 'Drifters, outsiders, Pacific Northwest melancholy, and delicate poetic realism',
+    movies: [
+      { id: 'gus-1', title: 'Good Will Hunting', year: 1997, runtime: '126 min', runtimeMinutes: 126, genre: 'Drama', director: 'Gus Van Sant', tagline: 'Matt Damon and Robin Williams on the park bench.', rating: '8.3' },
+      { id: 'gus-2', title: 'Elephant', year: 2003, runtime: '81 min', runtimeMinutes: 81, genre: 'Crime / Drama', director: 'Gus Van Sant', tagline: 'Palme d\'Or winner: gliding through high school hallways.', rating: '7.1' },
+      { id: 'gus-3', title: 'My Own Private Idaho', year: 1991, runtime: '104 min', runtimeMinutes: 104, genre: 'Drama', director: 'Gus Van Sant', tagline: 'River Phoenix by the campfire: I love you, and you don\'t pay me.', rating: '7.0' },
+      { id: 'gus-4', title: 'Drugstore Cowboy', year: 1989, runtime: '102 min', runtimeMinutes: 102, genre: 'Crime / Drama', director: 'Gus Van Sant', tagline: 'Matt Dillon robbing pharmacies across the Pacific Northwest.', rating: '7.3' },
+      { id: 'gus-5', title: 'Paranoid Park', year: 2007, runtime: '85 min', runtimeMinutes: 85, genre: 'Crime / Drama / Mystery', director: 'Gus Van Sant', tagline: 'Christopher Doyle\'s gorgeous 35mm and Super-8 skate photography.', rating: '6.7' },
+      { id: 'gus-6', title: 'Milk', year: 2008, runtime: '128 min', runtimeMinutes: 128, genre: 'Biography / Drama / History', director: 'Gus Van Sant', tagline: 'Sean Penn\'s Oscar-winning portrayal of Harvey Milk in San Francisco.', rating: '7.5' },
+      { id: 'gus-7', title: 'Finding Forrester', year: 2000, runtime: '136 min', runtimeMinutes: 136, genre: 'Drama', director: 'Gus Van Sant', tagline: 'Sean Connery as a reclusive novelist mentoring a Bronx prodigy.', rating: '7.3' },
+      { id: 'gus-8', title: 'To Die For', year: 1995, runtime: '106 min', runtimeMinutes: 106, genre: 'Comedy / Crime / Drama', director: 'Gus Van Sant', tagline: 'Nicole Kidman\'s ruthless ambition to become a television star.', rating: '6.8' }
+    ]
+  },
+  {
+    id: 'dir-safdie',
+    categoryId: 'directors',
+    title: 'The Safdie Brothers',
+    icon: '💎',
+    tagline: 'Palpable New York anxiety, kinetic energy, overlapping dialogue, and synth rush',
+    movies: [
+      { id: 'saf-1', title: 'Uncut Gems', year: 2019, runtime: '135 min', runtimeMinutes: 135, genre: 'Crime / Drama / Thriller', director: 'Josh & Benny Safdie', tagline: 'This is how I win. Adam Sandler as diamond district jeweler Howard Ratner.', rating: '7.4' },
+      { id: 'saf-2', title: 'Good Time', year: 2017, runtime: '101 min', runtimeMinutes: 101, genre: 'Crime / Drama / Thriller', director: 'Josh & Benny Safdie', tagline: 'Robert Pattinson through an adrenaline-soaked night in Queens.', rating: '7.3' },
+      { id: 'saf-3', title: 'Daddy Longlegs', year: 2009, runtime: '100 min', runtimeMinutes: 100, genre: 'Comedy / Drama', director: 'Josh & Benny Safdie', tagline: 'A semi-autobiographical love letter to the Safdies\' eccentric real-life father.', rating: '6.8' },
+      { id: 'saf-4', title: 'Heaven Knows What', year: 2014, runtime: '94 min', runtimeMinutes: 94, genre: 'Drama', director: 'Josh & Benny Safdie', tagline: 'Gritty street realism in Upper Manhattan featuring Arielle Holmes.', rating: '6.8' },
+      { id: 'saf-5', title: 'The Pleasure of Being Robbed', year: 2008, runtime: '71 min', runtimeMinutes: 71, genre: 'Comedy / Drama', director: 'Josh Safdie', tagline: 'The Safdies\' raw, 71-minute debut about a curious pickpocket wandering NYC.', rating: '6.0' }
+    ]
+  }
+,
+  {
+    id: 'dir-peele',
+    categoryId: 'directors',
+    title: 'Jordan Peele',
+    icon: '👁️',
+    tagline: 'Societal dread, high-concept horror satire, jaw-dropping imagery, and fresh chills',
+    movies: [
+      { id: 'pel-1', title: 'Get Out', year: 2017, runtime: '104 min', runtimeMinutes: 104, genre: 'Horror / Mystery / Thriller', director: 'Jordan Peele', tagline: 'The sunken place, silver tea spoons, and Oscar-winning psychological horror.', rating: '7.8' },
+      { id: 'pel-2', title: 'Us', year: 2019, runtime: '116 min', runtimeMinutes: 116, genre: 'Horror / Mystery / Thriller', director: 'Jordan Peele', tagline: 'Lupita Nyong\'o against red-jumpsuit tethered doppelgängers with gold scissors.', rating: '6.8' },
+      { id: 'pel-3', title: 'Nope', year: 2022, runtime: '130 min', runtimeMinutes: 130, genre: 'Horror / Mystery / Sci-Fi', director: 'Jordan Peele', tagline: 'Daniel Kaluuya and Keke Palmer hunting an impossible creature hiding inside a cloud.', rating: '6.8' },
+      { id: 'pel-4', title: 'Candyman', year: 2021, runtime: '91 min', runtimeMinutes: 91, genre: 'Horror / Thriller', director: 'Nia DaCosta & Jordan Peele', tagline: 'Say his name five times in the bathroom mirror: chilling Chicago urban legend.', rating: '5.9' },
+      { id: 'pel-5', title: 'Monkey Man', year: 2024, runtime: '121 min', runtimeMinutes: 121, genre: 'Action / Thriller', director: 'Dev Patel & Jordan Peele prod', tagline: 'Vicious underground fighting and John Wick-level revenge in Mumbai.', rating: '6.9' }
+    ]
+  },
+  {
+    id: 'dir-spike',
+    categoryId: 'directors',
+    title: 'Spike Lee',
+    icon: '🗽',
+    tagline: 'Vibrant Brooklyn streets, signature double dolly shots, cultural urgency, and pure swagger',
+    movies: [
+      { id: 'spk-lee-1', title: 'Do the Right Thing', year: 1989, runtime: '120 min', runtimeMinutes: 120, genre: 'Comedy / Drama', director: 'Spike Lee', tagline: 'The hottest day of the summer on a Bedford-Stuyvesant block in Brooklyn.', rating: '8.0' },
+      { id: 'spk-lee-2', title: 'Malcolm X', year: 1992, runtime: '202 min', runtimeMinutes: 202, genre: 'Biography / Drama / History', director: 'Spike Lee', tagline: 'Denzel Washington delivers one of cinema\'s most towering biographical portraits.', rating: '7.7' },
+      { id: 'spk-lee-3', title: 'BlacKkKlansman', year: 2018, runtime: '135 min', runtimeMinutes: 135, genre: 'Biography / Comedy / Crime', director: 'Spike Lee', tagline: 'John David Washington as a Black detective infiltrating the KKK with Adam Driver.', rating: '7.5' },
+      { id: 'spk-lee-4', title: '25th Hour', year: 2002, runtime: '135 min', runtimeMinutes: 135, genre: 'Drama', director: 'Spike Lee', tagline: 'Edward Norton\'s final 24 hours of freedom in post-9/11 New York before prison.', rating: '7.6' },
+      { id: 'spk-lee-5', title: 'Inside Man', year: 2006, runtime: '129 min', runtimeMinutes: 129, genre: 'Crime / Drama / Mystery', director: 'Spike Lee', tagline: 'Denzel Washington and Clive Owen in the slickest Wall Street bank heist ever filmed.', rating: '7.6' },
+      { id: 'spk-lee-6', title: 'He Got Game', year: 1998, runtime: '136 min', runtimeMinutes: 136, genre: 'Drama / Sport', director: 'Spike Lee', tagline: 'Denzel Washington and Ray Allen playing one-on-one basketball with Public Enemy beats.', rating: '6.9' },
+      { id: 'spk-lee-7', title: 'Da 5 Bloods', year: 2020, runtime: '154 min', runtimeMinutes: 154, genre: 'Adventure / Drama / War', director: 'Spike Lee', tagline: 'Four aging Vietnam veterans return to locate buried CIA gold bars and fallen leader Chadwick Boseman.', rating: '6.5' },
+      { id: 'spk-lee-8', title: 'She\'s Gotta Have It', year: 1986, runtime: '84 min', runtimeMinutes: 84, genre: 'Comedy / Romance', director: 'Spike Lee', tagline: 'The indie breakthrough introducing Nola Darling and Mars Blackmon.', rating: '6.8' }
+    ]
+  },
+  {
+    id: 'dir-lanthimos',
+    categoryId: 'directors',
+    title: 'Yorgos Lanthimos',
+    icon: '🦞',
+    tagline: 'Deadpan surrealism, fish-eye lenses, dark social satire, and shocking originality',
+    movies: [
+      { id: 'lan-1', title: 'Poor Things', year: 2023, runtime: '141 min', runtimeMinutes: 141, genre: 'Comedy / Drama / Romance', director: 'Yorgos Lanthimos', tagline: 'Emma Stone\'s Oscar-winning tour-de-force as Bella Baxter discovering the world.', rating: '7.9' },
+      { id: 'lan-2', title: 'The Favourite', year: 2018, runtime: '119 min', runtimeMinutes: 119, genre: 'Biography / Comedy / Drama', director: 'Yorgos Lanthimos', tagline: 'Olivia Colman, Rachel Weisz, and Emma Stone in a vicious 18th-century court rivalry.', rating: '7.5' },
+      { id: 'lan-3', title: 'The Lobster', year: 2015, runtime: '119 min', runtimeMinutes: 119, genre: 'Comedy / Drama / Romance', director: 'Yorgos Lanthimos', tagline: 'Single people check into a hotel and must find a partner in 45 days or become animals.', rating: '7.1' },
+      { id: 'lan-4', title: 'The Killing of a Sacred Deer', year: 2017, runtime: '121 min', runtimeMinutes: 121, genre: 'Drama / Mystery / Thriller', director: 'Yorgos Lanthimos', tagline: 'Colin Farrell and Barry Keoghan in an agonizing, razor-sharp psychological nightmare.', rating: '7.0' },
+      { id: 'lan-5', title: 'Dogtooth', year: 2009, runtime: '97 min', runtimeMinutes: 97, genre: 'Drama / Thriller', director: 'Yorgos Lanthimos', tagline: 'The Greek Weird Wave landmark: parents keep three teenagers locked inside a fenced house.', rating: '7.2' },
+      { id: 'lan-6', title: 'Kinds of Kindness', year: 2024, runtime: '164 min', runtimeMinutes: 164, genre: 'Comedy / Drama', director: 'Yorgos Lanthimos', tagline: 'A three-part triptych fable starring Emma Stone, Jesse Plemons, and Willem Dafoe.', rating: '6.6' }
+    ]
+  },
+  {
+    id: 'dir-burton',
+    categoryId: 'directors',
+    title: 'Tim Burton',
+    icon: '🦇',
+    tagline: 'Gothic whimsy, striped suits, Danny Elfman choirs, dark fairy tales, and lonely outsiders',
+    movies: [
+      { id: 'bur-1', title: 'Beetlejuice', year: 1988, runtime: '92 min', runtimeMinutes: 92, genre: 'Comedy / Fantasy', director: 'Tim Burton', tagline: 'Michael Keaton\'s unhinged bio-exorcist summoned by saying his name three times.', rating: '7.5' },
+      { id: 'bur-2', title: 'Edward Scissorhands', year: 1990, runtime: '105 min', runtimeMinutes: 105, genre: 'Drama / Fantasy / Romance', director: 'Tim Burton', tagline: 'Johnny Depp with shears for hands carving ice sculptures for Winona Ryder.', rating: '7.9' },
+      { id: 'bur-3', title: 'Batman', year: 1989, runtime: '126 min', runtimeMinutes: 126, genre: 'Action / Adventure', director: 'Tim Burton', tagline: 'Michael Keaton as the dark knight and Jack Nicholson dancing in art museums as The Joker.', rating: '7.5' },
+      { id: 'bur-4', title: 'Big Fish', year: 2003, runtime: '125 min', runtimeMinutes: 125, genre: 'Adventure / Drama / Fantasy', director: 'Tim Burton', tagline: 'Ewan McGregor swimming through giant tall tales, daffodil fields, and circus tents.', rating: '8.0' },
+      { id: 'bur-5', title: 'The Nightmare Before Christmas', year: 1993, runtime: '76 min', runtimeMinutes: 76, genre: 'Animation / Family / Fantasy', director: 'Henry Selick & Tim Burton prod', tagline: 'The Pumpkin King of Halloween Town kidnaps Sandy Claws.', rating: '7.9' },
+      { id: 'bur-6', title: 'Ed Wood', year: 1994, runtime: '126 min', runtimeMinutes: 126, genre: 'Biography / Comedy / Drama', director: 'Tim Burton', tagline: 'Johnny Depp and Martin Landau in a glorious black-and-white ode to the worst director.', rating: '7.8' },
+      { id: 'bur-7', title: 'Sleepy Hollow', year: 1999, runtime: '105 min', runtimeMinutes: 105, genre: 'Fantasy / Horror / Mystery', director: 'Tim Burton', tagline: 'Ichabod Crane investigating headless horseman decapitations in a mist-shrouded village.', rating: '7.3' },
+      { id: 'bur-8', title: 'Sweeney Todd: The Demon Barber of Fleet Street', year: 2007, runtime: '116 min', runtimeMinutes: 116, genre: 'Drama / Musical / Thriller', director: 'Tim Burton', tagline: 'Meat pies and razor blades: Sondheim\'s grand gothic operetta.', rating: '7.3' },
+      { id: 'bur-9', title: 'Corpse Bride', year: 2005, runtime: '77 min', runtimeMinutes: 77, genre: 'Animation / Drama / Family', director: 'Tim Burton & Mike Johnson', tagline: 'Stop-motion underworld love triangle with blue corpses and piano duets.', rating: '7.4' },
+      { id: 'bur-10', title: 'Batman Returns', year: 1992, runtime: '126 min', runtimeMinutes: 126, genre: 'Action / Crime / Fantasy', director: 'Tim Burton', tagline: 'Michelle Pfeiffer\'s iconic stitched Catwoman and Danny DeVito\'s sewer-dwelling Penguin.', rating: '7.1' }
+    ]
+  },
+  {
+    id: 'dir-cameron',
+    categoryId: 'directors',
+    title: 'James Cameron',
+    icon: '🌊',
+    tagline: 'Record-shattering blockbusters, relentless pacing, cutting-edge VFX, and aquatic depths',
+    movies: [
+      { id: 'cam-1', title: 'Terminator 2: Judgment Day', year: 1991, runtime: '137 min', runtimeMinutes: 137, genre: 'Action / Sci-Fi', director: 'James Cameron', tagline: 'Hasta la vista, baby. Liquid metal T-1000 and motorcycle shotgun flips.', rating: '8.6' },
+      { id: 'cam-2', title: 'Aliens', year: 1986, runtime: '137 min', runtimeMinutes: 137, genre: 'Action / Adventure / Sci-Fi', director: 'James Cameron', tagline: 'Get away from her, you b****! Sigourney Weaver in the yellow power loader.', rating: '8.4' },
+      { id: 'cam-3', title: 'Titanic', year: 1997, runtime: '194 min', runtimeMinutes: 194, genre: 'Drama / Romance', director: 'James Cameron', tagline: 'I\'m the king of the world! 11 Oscars and the most epic cinematic romance.', rating: '7.9' },
+      { id: 'cam-4', title: 'The Terminator', year: 1984, runtime: '107 min', runtimeMinutes: 107, genre: 'Action / Sci-Fi', director: 'James Cameron', tagline: 'Arnold Schwarzenegger\'s unstoppable cybernetic assassin stalking Sarah Connor in 1984.', rating: '8.1' },
+      { id: 'cam-5', title: 'Avatar', year: 2009, runtime: '162 min', runtimeMinutes: 162, genre: 'Action / Adventure / Fantasy', director: 'James Cameron', tagline: 'Entering the bioluminescent jungles of Pandora riding flying banshees in 3D.', rating: '7.9' },
+      { id: 'cam-6', title: 'The Abyss', year: 1989, runtime: '140 min', runtimeMinutes: 140, genre: 'Adventure / Drama / Sci-Fi', director: 'James Cameron', tagline: 'Deep-sea drilling divers discover an ethereal alien intelligence four miles under.', rating: '7.5' },
+      { id: 'cam-7', title: 'True Lies', year: 1994, runtime: '141 min', runtimeMinutes: 141, genre: 'Action / Comedy / Thriller', director: 'James Cameron', tagline: 'Arnold Schwarzenegger as a secret agent juggling nuclear terrorists and Jamie Lee Curtis.', rating: '7.3' },
+      { id: 'cam-8', title: 'Avatar: The Way of Water', year: 2022, runtime: '192 min', runtimeMinutes: 192, genre: 'Action / Adventure / Fantasy', director: 'James Cameron', tagline: 'Mind-bending underwater performance capture with the ocean Metkayina clan.', rating: '7.6' }
+    ]
+  },
+  {
+    id: 'dir-wong',
+    categoryId: 'directors',
+    title: 'Wong Kar-wai',
+    icon: '🚬',
+    tagline: 'Lush step-printing, neon Hong Kong nights, unrequited longing, and Nat King Cole ballads',
+    movies: [
+      { id: 'wkw-1', title: 'In the Mood for Love', year: 2000, runtime: '98 min', runtimeMinutes: 98, genre: 'Drama / Romance', director: 'Wong Kar-wai', tagline: 'Tony Leung and Maggie Cheung passing each other on the rainy noodle stall stairs.', rating: '8.1' },
+      { id: 'wkw-2', title: 'Chungking Express', year: 1994, runtime: '102 min', runtimeMinutes: 102, genre: 'Comedy / Drama / Romance', director: 'Wong Kar-wai', tagline: 'California Dreamin\' plays on repeat in a fast-food stall while pineapples expire.', rating: '8.0' },
+      { id: 'wkw-3', title: 'Fallen Angels', year: 1995, runtime: '99 min', runtimeMinutes: 99, genre: 'Comedy / Crime / Drama', director: 'Wong Kar-wai', tagline: 'Ultra-wide lens kinetic rides through Hong Kong tunnels with a hitman and an agent.', rating: '7.6' },
+      { id: 'wkw-4', title: 'Happy Together', year: 1997, runtime: '96 min', runtimeMinutes: 96, genre: 'Drama / Romance', director: 'Wong Kar-wai', tagline: 'Tony Leung and Leslie Cheung in turbulent, tango-fueled Buenos Aires exile.', rating: '7.7' },
+      { id: 'wkw-5', title: '2046', year: 2004, runtime: '129 min', runtimeMinutes: 129, genre: 'Drama / Romance / Sci-Fi', director: 'Wong Kar-wai', tagline: 'A nostalgic writer envisions a futuristic train where passengers go to recover lost memories.', rating: '7.4' },
+      { id: 'wkw-6', title: 'Days of Being Wild', year: 1990, runtime: '94 min', runtimeMinutes: 94, genre: 'Crime / Drama / Romance', director: 'Wong Kar-wai', tagline: 'The bird with no legs that can only fly: Leslie Cheung in 1960s humid heat.', rating: '7.4' },
+      { id: 'wkw-7', title: 'The Grandmaster', year: 2013, runtime: '130 min', runtimeMinutes: 130, genre: 'Action / Biography / Drama', director: 'Wong Kar-wai', tagline: 'Tony Leung as Wing Chun master Ip Man fighting in the rainy streets of Foshan.', rating: '6.5' }
+    ]
+  },
+  {
+    id: 'dir-chazelle',
+    categoryId: 'directors',
+    title: 'Damien Chazelle',
+    icon: '🎷',
+    tagline: 'High-octane jazz beats, explosive ambition, golden hour dreamers, and manic dedication',
+    movies: [
+      { id: 'chz-1', title: 'Whiplash', year: 2014, runtime: '106 min', runtimeMinutes: 106, genre: 'Drama / Music', director: 'Damien Chazelle', tagline: 'Were you rushing or were you dragging? J.K. Simmons hurling cymbals at Miles Teller.', rating: '8.5' },
+      { id: 'chz-2', title: 'La La Land', year: 2016, runtime: '128 min', runtimeMinutes: 128, genre: 'Comedy / Drama / Music', director: 'Damien Chazelle', tagline: 'Opening traffic jam dance, planetarium waltz, and what could have been.', rating: '8.0' },
+      { id: 'chz-3', title: 'Babylon', year: 2022, runtime: '189 min', runtimeMinutes: 189, genre: 'Comedy / Drama / History', director: 'Damien Chazelle', tagline: 'Insane, wild, drug-fueled Hollywood transitioning from silents to talkies.', rating: '7.1' },
+      { id: 'chz-4', title: 'First Man', year: 2018, runtime: '141 min', runtimeMinutes: 141, genre: 'Biography / Drama / History', director: 'Damien Chazelle', tagline: 'Ryan Gosling as Neil Armstrong inside vibrating, claustrophobic lunar tin cans.', rating: '7.3' },
+      { id: 'chz-5', title: 'Guy and Madeline on a Park Bench', year: 2009, runtime: '82 min', runtimeMinutes: 82, genre: 'Drama / Music / Musical', director: 'Damien Chazelle', tagline: 'Chazelle\'s raw 16mm Boston black-and-white jazz romance debut.', rating: '6.4' }
+    ]
+  },
+  {
+    id: 'dir-wachowski',
+    categoryId: 'directors',
+    title: 'The Wachowskis',
+    icon: '💊',
+    tagline: 'Philosophical action, mind-bending concepts, hyper-stylized visual revolutions, and unbound empathy',
+    movies: [
+      { id: 'wch-1', title: 'The Matrix', year: 1999, runtime: '136 min', runtimeMinutes: 136, genre: 'Action / Sci-Fi', director: 'Lana & Lilly Wachowski', tagline: 'Keanu Reeves, bullet-time rooftop dodges, and taking the red pill.', rating: '8.7' },
+      { id: 'wch-2', title: 'Bound', year: 1996, runtime: '109 min', runtimeMinutes: 109, genre: 'Crime / Thriller', director: 'Lana & Lilly Wachowski', tagline: 'Gina Gershon and Jennifer Tilly stealing $2 million from the Mafia in a tight neo-noir thriller.', rating: '7.3' },
+      { id: 'wch-3', title: 'Speed Racer', year: 2008, runtime: '135 min', runtimeMinutes: 135, genre: 'Action / Family / Sci-Fi', director: 'Lana & Lilly Wachowski', tagline: 'A dizzying, candy-colored pop-art psychedelic masterpiece on the Thunderhead track.', rating: '6.1' },
+      { id: 'wch-4', title: 'Cloud Atlas', year: 2012, runtime: '172 min', runtimeMinutes: 172, genre: 'Action / Drama / Sci-Fi', director: 'Lana & Lilly Wachowski & Tom Tykwer', tagline: 'Six interwoven souls across five centuries: our lives are not our own.', rating: '7.4' },
+      { id: 'wch-5', title: 'The Matrix Reloaded', year: 2003, runtime: '138 min', runtimeMinutes: 138, genre: 'Action / Sci-Fi', director: 'Lana & Lilly Wachowski', tagline: 'The Burly Brawl against 100 Agent Smiths and the legendary freeway chase.', rating: '7.2' },
+      { id: 'wch-6', title: 'The Matrix Resurrections', year: 2021, runtime: '148 min', runtimeMinutes: 148, genre: 'Action / Sci-Fi', director: 'Lana Wachowski', tagline: 'Meta love letter to Neo and Trinity revisiting the code in modern San Francisco.', rating: '5.7' }
     ]
   }
 ];
