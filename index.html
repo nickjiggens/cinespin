@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineSpin — Quicker Movie Picker Spinner-Upper</title>
+  <meta name="description"
+    content="Can't agree on what to watch? Spin the cinematic wheel to randomly pick from curated movie lists spanning eras, genres, themes, and legendary directors.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%22100%22%20height=%22100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+</head>
+
+<body>
+
+  <!-- Fullscreen Confetti Canvas Overlay -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <span class="brand-logo-icon" aria-hidden="true">🎬</span>
+      <div>
+        <h1 class="brand-title">
+          CineSpin
+          <span class="couple-badge">Couples Edition</span>
+        </h1>
+        <p class="brand-tagline">Quicker Movie Picker Spinner-Upper</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <button class="btn btn-secondary btn-sm" id="soundToggleBtn" aria-label="Toggle sound effects">
+        🔊 <span class="btn-label">Sound On</span>
+      </button>
+
+      <button class="btn btn-secondary btn-sm" id="openHistoryBtn" aria-label="View movie history">
+        🍿 History
+        <span class="badge-count" id="historyCountBadge" style="display: none;">0</span>
+      </button>
+
+      <button class="btn btn-primary btn-sm" id="openCustomModalBtn" aria-label="Create custom movie list">
+        + Custom List
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation: Category Tabs (Eras, Genres, Vibes, Directors, Custom) -->
+  <nav class="category-nav-wrapper" aria-label="Movie Categories">
+    <div class="category-tabs" id="categoryTabs">
+      <!-- Populated via JavaScript -->
+    </div>
+  </nav>
+
+  <!-- Sub-Navigation: Specific List Selector Pills -->
+  <nav class="list-selector-wrapper" aria-label="Movie Lists">
+    <div class="list-pills-container" id="listSelectorPills">
+      <!-- Populated via JavaScript -->
+    </div>
+  </nav>
+
+  <!-- Main Application Content -->
+  <main class="main-content">
+
+    <!-- Left Stage: Spinner Arena -->
+    <section class="spinner-stage" aria-label="Movie Spinner Area">
+      <div class="stage-top-bar">
+        <div class="active-list-info">
+          <div class="list-icon-badge" id="activeListIcon">📻</div>
+          <div>
+            <h2 class="active-list-title" id="activeListTitle">Loading List...</h2>
+            <p class="active-list-tagline" id="activeListTagline">Please wait</p>
+          </div>
+        </div>
+
+        <!-- Mode Toggle: Wheel vs Slot Reel -->
+        <div class="mode-switcher" role="group" aria-label="Spinner View Mode">
+          <button class="mode-btn active" id="modeWheelBtn" title="Wheel Spinner View">🎡 Wheel</button>
+          <button class="mode-btn" id="modeSlotBtn" title="Film Strip Reel View">🎞️ Reel</button>
+        </div>
+      </div>
+
+      <!-- Canvas Wheel Spinner View -->
+      <div class="wheel-display-area" id="wheelViewWrapper">
+        <canvas id="wheelCanvas" class="wheel-canvas" width="460" height="460"></canvas>
+      </div>
+
+      <!-- Alternative Slot Reel View -->
+      <div class="slot-display-area hidden" id="slotViewWrapper">
+        <div id="slotReelContainer"></div>
+      </div>
+
+      <!-- Epic Spin Action Button -->
+      <div class="spin-action-wrapper">
+        <button class="spin-btn-epic" id="spinBtn">
+          <span>SPIN THE WHEEL 🎬</span>
+        </button>
+        <div class="spin-keyboard-hint">
+          <span>or press</span>
+          <kbd class="kbd">SPACEBAR</kbd>
+          <span>to spin</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Sidebar: Active Movie Lineup & Filters -->
+    <aside class="lineup-sidebar" aria-label="Current Movie Lineup">
+      <div class="lineup-header">
+        <div class="lineup-header-top">
+          <h3 class="lineup-title">
+            Active Lineup
+            <span class="lineup-count-pill">
+              <span id="activeWheelCount">0</span> / <span id="totalListCount">0</span>
+            </span>
+          </h3>
+
+          <div class="toggle-all-btns">
+            <button class="btn btn-outline btn-sm" id="selectAllBtn" title="Select All Movies">All</button>
+            <button class="btn btn-outline btn-sm" id="deselectAllBtn" title="Clear All Movies">None</button>
+          </div>
+        </div>
+
+        <div class="lineup-controls-row">
+          <div class="runtime-filters" role="group" aria-label="Runtime Filter">
+            <button class="runtime-pill active" data-filter="all">All Times</button>
+            <button class="runtime-pill" data-filter="100">&lt; 100m</button>
+            <button class="runtime-pill" data-filter="120">&lt; 120m</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fast Search Bar -->
+      <div class="lineup-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="movieSearchInput" placeholder="Filter movies, directors, genres..."
+            aria-label="Filter movies">
+        </div>
+      </div>
+
+      <!-- Scrollable Movie Items -->
+      <div class="lineup-items-scroll" id="movieItemsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- MODAL: Winner Celebration Card -->
+  <dialog id="winnerModal" aria-labelledby="winnerTitle">
+    <div class="modal-inner">
+      <button class="modal-close-btn" id="closeWinnerModalBtn" aria-label="Close Winner Dialog">✕</button>
+
+      <div class="winner-card-body">
+        <div class="winner-trophy-badge">🏆</div>
+        <div class="winner-subtitle">Tonight's Official Selection</div>
+
+        <h2 class="winner-movie-title" id="winnerTitle">Movie Title</h2>
+
+        <div class="winner-badges-row">
+          <span class="winner-pill gold" id="winnerRating">⭐ 8.5</span>
+          <span class="winner-pill" id="winnerYear">2024</span>
+          <span class="winner-pill" id="winnerRuntime">120 min</span>
+          <span class="winner-pill" id="winnerGenre">Sci-Fi</span>
+        </div>
+
+        <p class="winner-tagline-quote" id="winnerTagline">"Catchy movie quote"</p>
+        <p class="winner-director-text" id="winnerDirector">Directed by Christopher Nolan</p>
+
+        <!-- Streaming Quick Links -->
+        <div class="winner-stream-links">
+          <a id="winnerJustWatchLink" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            📺 Where to Stream
+          </a>
+          <a id="winnerTrailerLink" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            ▶ Watch Trailer
+          </a>
+          <a id="winnerGoogleLink" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            🔍 Google Info
+          </a>
+        </div>
+
+        <!-- Decision Action Buttons -->
+        <div class="winner-actions-footer">
+          <button class="btn btn-gold btn-full" id="winnerWatchTonightBtn">
+            🍿 Let's Watch It! (Save to History)
+          </button>
+          <button class="btn btn-secondary" id="winnerSpinAgainBtn">
+            🔄 Spin Again
+          </button>
+          <button class="btn btn-outline" id="winnerEliminateBtn" title="Remove this movie from pool and spin again">
+            🚫 Eliminate & Re-Spin
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MODAL: History / Couple's Movie Diary -->
+  <dialog id="historyModal" aria-labelledby="historyTitle">
+    <div class="modal-inner">
+      <button class="modal-close-btn" id="closeHistoryBtn" aria-label="Close History Dialog">✕</button>
+
+      <div class="history-modal-header">
+        <h2 id="historyTitle" class="brand-title">🍿 Watched History</h2>
+        <button class="btn btn-outline btn-sm" id="clearHistoryBtn">Clear All</button>
+      </div>
+
+      <div class="history-items-container" id="historyItemsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MODAL: Custom List Creator -->
+  <dialog id="customListModal" aria-labelledby="customListTitle">
+    <div class="modal-inner">
+      <button class="modal-close-btn" id="closeCustomModalBtn" aria-label="Close Custom List Dialog">✕</button>
+
+      <h2 id="customListTitle" class="brand-title" style="margin-bottom: 1rem;">📝 Create Custom Movie List</h2>
+
+      <div class="custom-list-form">
+        <div class="form-group">
+          <label for="customListNameInput">List Title</label>
+          <input type="text" id="customListNameInput" placeholder="e.g. Nick & GF's Bucket List, Spooky Season..."
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="customListMoviesInput">Movie Titles (one per line or comma-separated)</label>
+          <textarea id="customListMoviesInput" rows="6"
+            placeholder="The Truman Show&#10;Everything Everywhere All at Once&#10;Amélie&#10;Knives Out&#10;About Time"></textarea>
+          <span class="form-hint">Tip: Paste at least 2 movie titles to spin.</span>
+        </div>
+
+        <button class="btn btn-primary" id="saveCustomListBtn">
+          Save & Load Wheel 🎬
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "cinespin-movie-picker",
+  "version": "1.0.0",
+  "description": "Quicker movie picker spinner-upper for couples",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "movie-picker",
+    "spinner",
+    "couples",
+    "letterboxd",
+    "cinema"
+  ],
+  "author": "",
+  "license": "MIT"
+}
