@@ -31,6 +31,10 @@
     </div>
 
     <div class="header-controls">
+      <button class="btn btn-gold btn-sm" id="headerRandomListBtn" title="Randomly pick a movie list (Shortcut: L)">
+        🎲 <span class="btn-label">Random List</span>
+      </button>
+
       <button class="btn btn-secondary btn-sm" id="soundToggleBtn" aria-label="Toggle sound effects">
         🔊 <span class="btn-label">Sound On</span>
       </button>
@@ -55,6 +59,19 @@
 
   <!-- Sub-Navigation: Specific List Selector Pills -->
   <nav class="list-selector-wrapper" aria-label="Movie Lists">
+    <div class="list-bar-header">
+      <div class="random-list-bar-controls">
+        <button class="btn btn-random-list" id="randomListBtn" title="Randomly pick a movie list (Shortcut: L)">
+          <span class="dice-icon">🎲</span>
+          <span class="random-btn-text">Random List</span>
+        </button>
+        <div class="random-scope-toggle" role="group" aria-label="Random list scope">
+          <button class="scope-pill active" id="scopeAllListsBtn" data-scope="all" title="Pick across all 74 lists">All (74)</button>
+          <button class="scope-pill" id="scopeCategoryBtn" data-scope="category" title="Pick within active category">This Category</button>
+        </div>
+      </div>
+      <div class="list-count-indicator" id="categoryListsCount">Showing lists</div>
+    </div>
     <div class="list-pills-container" id="listSelectorPills">
       <!-- Populated via JavaScript -->
     </div>
@@ -68,8 +85,11 @@
       <div class="stage-top-bar">
         <div class="active-list-info">
           <div class="list-icon-badge" id="activeListIcon">📻</div>
-          <div>
-            <h2 class="active-list-title" id="activeListTitle">Loading List...</h2>
+          <div class="active-list-text-wrap">
+            <div class="active-list-title-row">
+              <h2 class="active-list-title" id="activeListTitle">Loading List...</h2>
+              <button class="btn-surprise-mini" id="stageRandomListBtn" title="Pick a random list">🎲 Surprise List</button>
+            </div>
             <p class="active-list-tagline" id="activeListTagline">Please wait</p>
           </div>
         </div>
@@ -240,6 +260,29 @@
       </div>
     </div>
   </dialog>
+
+  <!-- Random List Roulette / Ticker Overlay -->
+  <div class="random-list-overlay hidden" id="randomListOverlay" aria-live="polite" aria-modal="true" role="dialog">
+    <div class="random-list-card" id="randomListCard">
+      <div class="roulette-header">
+        <span class="roulette-badge">🎲 LIST ROULETTE</span>
+        <button class="roulette-close-btn" id="closeRouletteBtn" aria-label="Close List Roulette">✕</button>
+      </div>
+      <div class="roulette-status" id="rouletteStatus">Shuffling through lists...</div>
+      <div class="roulette-display" id="rouletteDisplay">
+        <span class="roulette-icon" id="rouletteIcon">🍿</span>
+        <div class="roulette-details">
+          <div class="roulette-category" id="rouletteCategory">All Categories</div>
+          <div class="roulette-title" id="rouletteTitle">Selecting...</div>
+          <div class="roulette-count" id="rouletteCount">Curated Movies</div>
+        </div>
+      </div>
+      <div class="roulette-actions hidden" id="rouletteActions">
+        <button class="btn btn-primary btn-sm" id="rouletteAcceptBtn">Explore This List 🎬</button>
+        <button class="btn btn-outline btn-sm" id="rouletteReRollBtn">🎲 Roll Again</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script type="module" src="js/app.js"></script>

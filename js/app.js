@@ -20,6 +20,9 @@ class MoviePickerApp {
     this.maxRuntimeFilter = 'all'; // 'all', '100', '120'
     this.spinnerMode = 'wheel'; // 'wheel' | 'slot'
     this.currentWinner = null;
+    this.randomScope = 'all'; // 'all' or 'category'
+    this.isShufflingList = false;
+    this.rouletteTimer = null;
 
     // Component instances
     this.wheel = null;
@@ -100,11 +103,19 @@ class MoviePickerApp {
       spinBtn.addEventListener('click', () => this.spin());
     }
 
-    // Keyboard shortcut: Spacebar to spin
+    // Keyboard shortcuts: Spacebar to spin, L or R to pick random list, Esc to close overlay
     window.addEventListener('keydown', (e) => {
-      if (e.code === 'Space' && e.target === document.body) {
+      const isInput = ['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName);
+      if (isInput) return;
+
+      if (e.code === 'Space') {
         e.preventDefault();
         this.spin();
+      } else if (e.code === 'KeyL' || e.code === 'KeyR') {
+        e.preventDefault();
+        this.pickRandomList();
+      } else if (e.code === 'Escape') {
+        this.closeRandomListOverlay();
       }
     });
 
@@ -239,6 +250,48 @@ class MoviePickerApp {
     if (closeWinnerModalBtn) {
       closeWinnerModalBtn.addEventListener('click', () => winnerModal.close());
     }
+
+    // Random List Picker triggers
+    const randomListBtn = document.getElementById('randomListBtn');
+    const headerRandomListBtn = document.getElementById('headerRandomListBtn');
+    const stageRandomListBtn = document.getElementById('stageRandomListBtn');
+
+    if (randomListBtn) randomListBtn.addEventListener('click', () => this.pickRandomList());
+    if (headerRandomListBtn) headerRandomListBtn.addEventListener('click', () => this.pickRandomList());
+    if (stageRandomListBtn) stageRandomListBtn.addEventListener('click', () => this.pickRandomList());
+
+    // Random list scope toggle
+    const scopeAllBtn = document.getElementById('scopeAllListsBtn');
+    const scopeCatBtn = document.getElementById('scopeCategoryBtn');
+    if (scopeAllBtn && scopeCatBtn) {
+      scopeAllBtn.addEventListener('click', () => {
+        this.randomScope = 'all';
+        scopeAllBtn.classList.add('active');
+        scopeCatBtn.classList.remove('active');
+      });
+      scopeCatBtn.addEventListener('click', () => {
+        this.randomScope = 'category';
+        scopeCatBtn.classList.add('active');
+        scopeAllBtn.classList.remove('active');
+      });
+    }
+
+    // Roulette overlay controls
+    const closeRouletteBtn = document.getElementById('closeRouletteBtn');
+    const rouletteAcceptBtn = document.getElementById('rouletteAcceptBtn');
+    const rouletteReRollBtn = document.getElementById('rouletteReRollBtn');
+    const rouletteOverlay = document.getElementById('randomListOverlay');
+
+    if (closeRouletteBtn) closeRouletteBtn.addEventListener('click', () => this.closeRandomListOverlay());
+    if (rouletteAcceptBtn) rouletteAcceptBtn.addEventListener('click', () => this.closeRandomListOverlay());
+    if (rouletteReRollBtn) rouletteReRollBtn.addEventListener('click', () => this.pickRandomList());
+    if (rouletteOverlay) {
+      rouletteOverlay.addEventListener('click', (e) => {
+        if (e.target === rouletteOverlay) {
+          this.closeRandomListOverlay();
+        }
+      });
+    }
   }
 
   // --- RENDER CATEGORY TABS ---
@@ -269,6 +322,19 @@ class MoviePickerApp {
     if (!container) return;
 
     const availableLists = this.getAllLists().filter(l => l.categoryId === this.currentCategoryId);
+
+    // Update list count indicator & all scope button count
+    const countEl = document.getElementById('categoryListsCount');
+    if (countEl) {
+      const activeCat = this.categories.find(c => c.id === this.currentCategoryId);
+      const catName = activeCat ? activeCat.name : '';
+      countEl.textContent = `${availableLists.length} list${availableLists.length !== 1 ? 's' : ''} in ${catName}`;
+    }
+
+    const allBtn = document.getElementById('scopeAllListsBtn');
+    if (allBtn) {
+      allBtn.textContent = `All (${this.getAllLists().length})`;
+    }
 
     if (availableLists.length === 0) {
       if (this.currentCategoryId === 'custom') {
@@ -330,6 +396,121 @@ class MoviePickerApp {
     // Reset exclusions for the new list
     this.disabledMovieIds.clear();
     this.applyMovieFilters();
+  }
+
+  // --- RANDOM LIST SELECTION & ROULETTE ---
+  pickRandomList(forcedScope = null) {
+    if (this.isShufflingList) return;
+
+    sounds.init();
+    const scope = forcedScope || this.randomScope;
+    let pool = [];
+
+    if (scope === 'category') {
+      pool = this.getAllLists().filter(l => l.categoryId === this.currentCategoryId && l.movies && l.movies.length > 0);
+      if (pool.length === 0) {
+        pool = this.getAllLists().filter(l => l.movies && l.movies.length > 0);
+      }
+    } else {
+      pool = this.getAllLists().filter(l => l.movies && l.movies.length > 0);
+    }
+
+    if (pool.length === 0) return;
+
+    // Pick winner, prioritizing a list different from current
+    const nonCurrent = pool.filter(l => l.id !== this.currentListId);
+    const winner = nonCurrent.length > 0
+      ? nonCurrent[Math.floor(Math.random() * nonCurrent.length)]
+      : pool[0];
+
+    this.isShufflingList = true;
+    if (this.rouletteTimer) clearTimeout(this.rouletteTimer);
+
+    // Show overlay
+    const overlay = document.getElementById('randomListOverlay');
+    const card = document.getElementById('randomListCard');
+    const actions = document.getElementById('rouletteActions');
+    const statusEl = document.getElementById('rouletteStatus');
+    const iconEl = document.getElementById('rouletteIcon');
+    const catEl = document.getElementById('rouletteCategory');
+    const titleEl = document.getElementById('rouletteTitle');
+    const countEl = document.getElementById('rouletteCount');
+
+    if (overlay) overlay.classList.remove('hidden');
+    if (actions) actions.classList.add('hidden');
+    if (card) card.classList.remove('winner-landed');
+    if (statusEl) statusEl.textContent = `🎲 Shuffling through ${pool.length} curated lists...`;
+
+    // Shuffle sequence with decelerating intervals
+    const delays = [45, 50, 55, 65, 80, 100, 130, 170, 220, 280, 360];
+    let step = 0;
+
+    const findCategoryName = (catId) => {
+      const cat = this.categories.find(c => c.id === catId);
+      return cat ? cat.name : 'Curated';
+    };
+
+    const runStep = () => {
+      if (step < delays.length) {
+        // Show random preview item from pool
+        const randomItem = pool[Math.floor(Math.random() * pool.length)];
+        if (iconEl) iconEl.textContent = randomItem.icon || '🎬';
+        if (catEl) catEl.textContent = findCategoryName(randomItem.categoryId);
+        if (titleEl) titleEl.textContent = randomItem.title;
+        if (countEl) countEl.textContent = `${randomItem.movies ? randomItem.movies.length : 0} movies`;
+
+        sounds.playTick(1.0 + (step / delays.length) * 0.4);
+
+        const currentDelay = delays[step];
+        step++;
+        setTimeout(runStep, currentDelay);
+      } else {
+        // Finalize on winner!
+        if (iconEl) iconEl.textContent = winner.icon || '🎬';
+        if (catEl) catEl.textContent = findCategoryName(winner.categoryId);
+        if (titleEl) titleEl.textContent = winner.title;
+        if (countEl) countEl.textContent = `${winner.movies ? winner.movies.length : 0} movies`;
+
+        if (statusEl) statusEl.textContent = `🎉 List Chosen for Tonight!`;
+        if (card) card.classList.add('winner-landed');
+        if (actions) actions.classList.remove('hidden');
+
+        sounds.playWinnerFanfare();
+
+        // Switch to the chosen list in the application
+        this.currentCategoryId = winner.categoryId;
+        this.currentListId = winner.id;
+        this.renderCategoryTabs();
+        this.renderListSelector();
+        this.loadActiveList();
+
+        // Highlight and scroll the chosen pill into view
+        setTimeout(() => {
+          const activePill = document.querySelector(`.list-pill[data-list-id="${winner.id}"]`);
+          if (activePill) {
+            activePill.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            activePill.classList.add('list-pill-shuffled');
+            setTimeout(() => activePill.classList.remove('list-pill-shuffled'), 2500);
+          }
+        }, 150);
+
+        this.isShufflingList = false;
+
+        // Auto-dismiss after 4 seconds of inactivity
+        this.rouletteTimer = setTimeout(() => {
+          this.closeRandomListOverlay();
+        }, 4000);
+      }
+    };
+
+    runStep();
+  }
+
+  closeRandomListOverlay() {
+    if (this.rouletteTimer) clearTimeout(this.rouletteTimer);
+    const overlay = document.getElementById('randomListOverlay');
+    if (overlay) overlay.classList.add('hidden');
+    this.isShufflingList = false;
   }
 
   // --- FILTER MOVIES & SYNC SPINNERS ---

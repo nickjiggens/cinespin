@@ -28,8 +28,14 @@
   - Instant direct links: **"Where to Stream"** (JustWatch), **"Watch Trailer"** (YouTube), and **"Google Info"**.
   - **"Let's Watch It! 🍿"** saves to your couple's Watched History diary.
   - **"Eliminate & Re-Spin 🚫"** drops the winner from the wheel and immediately spins again.
-- **Keyboard Shortcut**:
-  - Hit `SPACEBAR` to spin the wheel at any time!
+- **Random List Roulette 🎲 ("Can't Even Pick A List?")**:
+  - One-click random list picker with mechanical tick sound effects and high-speed roulette animation.
+  - Scope toggle: Pick randomly across all **74 lists** in the entire library, or restrict to the active category.
+  - Automatically switches categories, scrolls the selected list pill into view, and loads the wheel.
+- **Keyboard Shortcuts**:
+  - `SPACEBAR`: Spin the movie wheel / slot reel.
+  - `L` or `R`: Trigger Random List Roulette anytime.
+  - `ESC`: Close modals and overlays.
 - **Zero-Dependency & Offline-Ready**:
   - Pure HTML5, modern CSS, and vanilla ES Modules.
   - Sound effects synthesized on-the-fly via Web Audio API (zero audio files to break or load slowly).
